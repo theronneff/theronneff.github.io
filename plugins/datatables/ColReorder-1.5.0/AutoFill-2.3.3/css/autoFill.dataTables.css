@@ -4,7 +4,7 @@ div.dt-autofill-handle {
   width: 8px;
   z-index: 102;
   box-sizing: border-box;
-  background: #337ab7;
+  background: #3366ff;
   cursor: pointer;
 }
 
@@ -15,7 +15,7 @@ div.dtk-focus-alt div.dt-autofill-handle {
 div.dt-autofill-select {
   position: absolute;
   z-index: 1001;
-  background-color: #337ab7;
+  background-color: #4989de;
   background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.5) 10px);
 }
 div.dt-autofill-select.top, div.dt-autofill-select.bottom {
@@ -72,6 +72,17 @@ div.dt-autofill-list div.dt-autofill-button {
   padding: 0.5em 0;
   border-bottom: 1px solid #ccc;
 }
+div.dt-autofill-list div.dt-autofill-button button {
+  color: white;
+  margin: 0;
+  padding: 6px 12px;
+  text-align: center;
+  border: 1px solid #2e6da4;
+  background-color: #337ab7;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+}
 
 div.dt-autofill-background {
   position: fixed;
@@ -82,10 +93,4 @@ div.dt-autofill-background {
   background: rgba(0, 0, 0, 0.7);
   background: radial-gradient(ellipse farthest-corner at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
   z-index: 10;
-}
-
-div.dt-autofill-list div.dt-autofill-question input[type=number] {
-  padding: 6px;
-  width: 60px;
-  margin: -2px 0;
 }
