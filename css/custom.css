@@ -1,1 +1,671 @@
+/* 
 
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+@charset "UTF-8";
+/*
+
+*/
+@import url("https://fonts.googleapis.com/css?family=Arimo:300,400,500,600,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700");
+
+/*  Typography */
+/* ----------------------------------------------------------------
+	Typography : Reset
+-----------------------------------------------------------------*/
+p { font-style: normal; font-weight: 400; text-transform: none; letter-spacing: 0; color: #3c4043; }
+body { font-size: 1.28rem!important; line-height: 1.65714286em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #3c4043; }
+h5, .h5 { font-size: 1.4em; }
+h6, .h6 { font-size: 1.1em; line-height: 1.85714286em; font-weight: 500; }
+h7, .h7 { font-size: 1em; line-height: 1.85714286em; font-weight: 700; }
+
+/* ----------------------------------------------------------------
+Side Push Panel / Main Menu
+-----------------------------------------------------------------*/
+/* Side panel position keeps body from moving */
+.side-panel .body-inner, .side-panel #wrapper { height: 100vh; position: static; }
+
+/* Side panel is brought above body and menu logo */
+#side-panel { z-index: 1000000; }
+
+/* Side panel activation blurs body */
+.side-panel.side-panel-active.side-panel-push .body-inner, .side-panel.side-panel-active.side-panel-push #wrapper { filter: blur(0px) brightness(0.6);  /*Added SVG blur when side panel is activated*/ }
+
+/* Side panel color and opacity */
+#side-panel { background-color: rgba(255, 255, 255, 0.93); }
+
+/* Side panel close button size */
+#side-panel #close-panel { padding: 25px; }
+side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.btn:not([href]):not([tabindex]).btn-transparent { font-size: 21px; font-weight: 300; padding: 12px 12px; }
+
+/* Side panel menu close button size and highlight color */
+#side-panel-menu { padding: 25px; }
+side-panel-menu.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { font-size: 15px!important; font-weight: 600; text-transform: capitalize; padding: 12px 18px; }
+
+button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { background-color: transparent; border: 0; color: #fff; }
+button.btn.btn-transparent-menu.btn-inverted, .btn:not(.close):not(.mfp-close).btn-transparent-menu.btn-inverted, a.btn:not([href]):not([tabindex]).btn-transparent-menu.btn-inverted { color: #fff; }
+
+/* Side panel menu button size */
+#mainMenu.menu-vertical:not(.menu-overlay) nav > ul > li > a { font-size: 15px; padding: 9px 0; }
+
+/* Side panel close button on-state color */
+side-panel.btn:hover, side-panel.btn:focus, side-panel.btn:not(:disabled):not(.disabled):active, side-panel.btn:not(:disabled):not(.disabled).active, .btn:not(.close):not(.mfp-close):hover, .btn:not(.close):not(.mfp-close):focus, .btn:not(.close):not(.mfp-close):not(:disabled):not(.disabled):active, .btn:not(.close):not(.mfp-close):not(:disabled):not(.disabled).active, a.btn:not([href]):not([tabindex]):hover, a.btn:not([href]):not([tabindex]):focus, a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled).active { background-color: rgba(0, 0, 0, 0.1); border-color: transparent; color: #3c4043; text-decoration: none; }
+
+/* Side panel inside menu text hover color change */
+#mainMenu nav > ul > li.hover-active > a, #mainMenu nav > ul > li.hover-active > span, #mainMenu nav > ul > li.current > a, #mainMenu nav > ul > li.current > span, #mainMenu nav > ul > li:hover > a, #mainMenu nav > ul > li:hover > span, #mainMenu nav > ul > li:focus > a, #mainMenu nav > ul > li:focus > span { color: #0276FD; /*Menu Styles*/ /*Menu Hover Color*/ }
+
+#mainMenu nav > ul > li > a { color: #171A20; /*Menu Styles*/ /*Menu Button Color*/ }
+
+#mainMenu nav > ul > li .dropdown-menu > li.current > a, #mainMenu nav > ul > li .dropdown-menu > li.current > span, #mainMenu nav > ul > li .dropdown-menu > li:hover > a, #mainMenu nav > ul > li .dropdown-menu > li:hover > span, #mainMenu nav > ul > li .dropdown-menu > li:focus > a, #mainMenu nav > ul > li .dropdown-menu > li:focus > span, #mainMenu nav > ul > li .dropdown-menu > li:active > a, #mainMenu nav > ul > li .dropdown-menu > li:active > span, #mainMenu nav > ul > li .dropdown-menu > li.hover-active > a, #mainMenu nav > ul > li .dropdown-menu > li.hover-active > span { color: #0276FD; /*Drop Down Menu Styles*/ /*Drop Down Menu Hover Color*/ }
+
+#mainMenu nav > ul > li.dropdown:before { color: #696969!important; }
+
+/* Menu text hover color change */
+button.btn.btn-transparent-menu:hover, .btn:not(.close):not(.mfp-close).btn-transparent-menu:hover, a.btn:not([href]):not([tabindex]).btn-transparent-menu:hover { color: #fff; }
+button.btn.btn-transparent-menu:active, .btn:not(.close):not(.mfp-close).btn-transparent-menu:active, a.btn:not([href]):not([tabindex]).btn-transparent-menu:active { color: rgba(250, 250, 250, 0.6)!important; }
+
+#mainMenu nav > ul > li .dropdown-menu > li > a { font-weight: 500; /* Dropdown Menu font weight change */ }
+
+/* Side panel inside menu text font weight change */
+#mainMenu.menu-lowercase nav > ul > li > a { font-weight: 400; }
+
+/* Side panel moves to right side of screen from left side */
+.side-panel.side-panel-right #side-panel #close-panel { left: auto; right: 0; }
+
+/* Sticky Menu Header BG Color */
+#header .header-inner, #header #header-wrap { background-color: rgba(30, 32, 34, 0.95); }
+
+#header .header-inner #logo a, #header .header-inner #logo a span, #header #header-wrap #logo a { line-height: 70px !important; display: inline-block!important; padding: 0 0 !important;  }
+
+p.copyright-small { font-size: 0.6875em; margin-bottom: 20px; }
+
+/* ----------------------------------------------------------------
+Slider Button Changes
+-----------------------------------------------------------------*/
+.inspiro-slider .flickity-button:hover {
+    background-color: transparent;      /* Set slider arrow bg color */
+}
+.flickity-button {
+    z-index: 100;      /* Set slider arrows behind mobile menu */
+}
+
+.inspiro-slider .slide .slide-captions h2 { font-size: 50px; font-weight: 600; line-height: 55px; margin-bottom: 20px; color: #fff; }
+
+/* ----------------------------------------------------------------
+Slider Background Overlay Changes
+-----------------------------------------------------------------*/
+.bg-overlay[data-style="10"] {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.6) 100%);
+    opacity: 1;
+}
+.bg-overlay[data-style="13"] {
+    background: rgba(25, 43, 56, 0.69);      /* Slider - Change BG color overlay */
+    mix-blend-mode: multiply;
+}
+.bg-overlay[data-style="14"] {
+    background: rgba(0, 0, 0, 0.6);     /* Slider - Change BG color overlay */
+    mix-blend-mode: multiply;
+	opacity: .4;
+}
+.bg-overlay[data-style="15"] {
+    background: rgba(0, 0, 0, 0);      /* Slider - Change BG color overlay */
+    mix-blend-mode: multiply;
+}
+.bg-overlay[data-style="20"] {
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.56) 0, rgba(0, 0, 0, 0) 56%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.56) 0, rgba(0, 0, 0, 0) 56%);
+    opacity: 1;
+}
+.bg-overlay[data-style="21"] {
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 50%);
+    opacity: 1;
+}
+.bg-overlay[data-style="22"] {
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 80%);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 80%);
+    opacity: 1;
+}
+.bg-overlay[data-style="23"] {
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.56) 0, rgba(0, 0, 0, 0) 56%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.56) 0, rgba(0, 0, 0, 0) 56%);
+    opacity: 1;
+}
+.bg-overlay[data-style="new"] {
+    background: rgba(0, 0, 0, 0.38);
+    opacity: .38;
+}
+
+.portfolio-attributes .attribute strong, .portfolio-attributes {
+    font-size: 18px;      /* Slider Webinar - Change font size Title & Date */
+}
+.portfolio-attributes .attribute strong {
+    border-bottom: 0px solid rgba(31, 31, 31, 0.05);
+}
+
+/* Bottom center text */
+.bottom-center { position: absolute; top: 97%; left: 50%; transform: translate(-50%, -50%); width: 100%; }
+
+.icon-box.process { border: 1px solid #fff; margin-top: 45px; padding: 30px; border-radius: 6px; width: 100%; background-color: rgba(0, 0, 0, 0.3); }
+
+.icon-box.center h5 { margin: 0 0 24px 0px; }
+
+.portfolio-item.overlay-black .portfolio-image:after, .portfolio-item.overlay-black .portfolio-slider .flickity-viewport:after, .portfolio-item.overlay-black .grid-image:after, .portfolio-item.overlay-black .grid-slider .flickity-viewport:after, .grid-item.overlay-black .portfolio-image:after, .grid-item.overlay-black .portfolio-slider .flickity-viewport:after, .grid-item.overlay-black .grid-image:after, .grid-item.overlay-black .grid-slider .flickity-viewport:after { background-color: #111111; }
+
+.portfolio-item.overlay-black .portfolio-description h3, .portfolio-item.overlay-black .grid-description h3, .grid-item.overlay-black .portfolio-description h3, .grid-item.overlay-black .grid-description h3 { color: #fff; }
+
+.portfolio-item.overlay-black .portfolio-description p, .portfolio-item.overlay-black .portfolio-description span, .portfolio-item.overlay-black .grid-description p, .portfolio-item.overlay-black .grid-description span, .grid-item.overlay-black .portfolio-description p, .grid-item.overlay-black .portfolio-description span, .grid-item.overlay-black .grid-description p, .grid-item.overlay-black .grid-description span { color: #fff; }
+
+.portfolio-item.overlay-black:hover .portfolio-image:after, .portfolio-item.overlay-black:hover .portfolio-slider .flickity-viewport:after, .portfolio-item.overlay-black:hover .grid-image:after, .portfolio-item.overlay-black:hover .grid-slider .flickity-viewport:after, .grid-item.overlay-black:hover .portfolio-image:after, .grid-item.overlay-black:hover .portfolio-slider .flickity-viewport:after, .grid-item.overlay-black:hover .grid-image:after, .grid-item.overlay-black:hover .grid-slider .flickity-viewport:after { opacity: 0.77; }
+
+.portfolio-item.large-width .portfolio-description, .portfolio-item.large-width .grid-description, .portfolio-item .portfolio-links, .grid-item .portfolio-description, .grid-item .grid-description, .grid-item .portfolio-links { text-align: left; top: 92%!important; width: 100%; }
+
+.portfolio-item.large-width .portfolio-description, .portfolio-item.large-width .grid-description, .portfolio-item .portfolio-links, .grid-item .portfolio-description, .grid-item .grid-description, .grid-item .portfolio-links { text-align: center; top: 50%!important; width: 100%; }
+
+/* ----------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------------*/
+/* Large Button changes */
+button.btn.btn-lg, .btn:not(.close):not(.mfp-close).btn-lg, a.btn:not([href]):not([tabindex]).btn-lg { letter-spacing: normal; line-height: 28px; padding: 16px 45px; text-transform: capitalize; }
+button.btn.btn-dark.btn-outline, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline { background-color: rgba(255, 255, 255, 0.83); color: #000000; border-color: #000000; }
+button.btn.btn-dark.btn-outline:hover, button.btn.btn-dark.btn-outline:focus, button.btn.btn-dark.btn-outline:active, button.btn.btn-dark.btn-outline.active, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline:hover, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline:focus, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline:active, .btn:not(.close):not(.mfp-close).btn-dark.btn-outline.active, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline:active, a.btn:not([href]):not([tabindex]).btn-dark.btn-outline.active { background-color: rgba(0, 0, 0, 0.69); border-color: #000000; color: #fff; }
+
+button.btn.btn-dark.btn-fill, .btn:not(.close):not(.mfp-close).btn-dark.btn-fill, a.btn:not([href]):not([tabindex]).btn-dark.btn-fill { background-color: #000; color: #fff; border-color: #000000; border-width: 1px; }
+button.btn.btn-dark.btn-fill:hover, button.btn.btn-dark.btn-fill:focus, button.btn.btn-dark.btn-fill:active, button.btn.btn-dark.btn-fill.active, .btn:not(.close):not(.mfp-close).btn-dark.btn-fill:hover, .btn:not(.close):not(.mfp-close).btn-dark.btn-fill:focus, .btn:not(.close):not(.mfp-close).btn-dark.btn-fill:active, .btn:not(.close):not(.mfp-close).btn-dark.btn-fill.active, a.btn:not([href]):not([tabindex]).btn-dark.btn-fill:hover, a.btn:not([href]):not([tabindex]).btn-dark.btn-fill:focus, a.btn:not([href]):not([tabindex]).btn-dark.btn-fill:active, a.btn:not([href]):not([tabindex]).btn-dark.btn-fill.active { background-color: rgba(255, 255, 255, 0.6); border-color: #000000; color: #000; border-width: 1px; }
+
+button.btn.btn-sm, .btn:not(.close):not(.mfp-close).btn-sm, a.btn:not([href]):not([tabindex]).btn-sm { font-size: 12px; height: 33px; line-height: 28px; padding: 0 14px; text-transform: capitalize; letter-spacing: normal; }
+
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { letter-spacing: 0px; text-transform: inherit; padding: 12px 39px; }
+
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { padding: 16px 39px; }
+
+/* Regular Button changes */
+button.btn.btn-dark, .btn:not(.close):not(.mfp-close).btn-dark, a.btn:not([href]):not([tabindex]).btn-dark { background-color: #000000; border-color: #000000; border-width: 1px; }
+
+button.btn.btn-dark:hover, button.btn.btn-dark:focus, button.btn.btn-dark:active, button.btn.btn-dark.active, .btn:not(.close):not(.mfp-close).btn-dark:hover, .btn:not(.close):not(.mfp-close).btn-dark:focus, .btn:not(.close):not(.mfp-close).btn-dark:active, .btn:not(.close):not(.mfp-close).btn-dark.active, a.btn:not([href]):not([tabindex]).btn-dark:hover, a.btn:not([href]):not([tabindex]).btn-dark:focus, a.btn:not([href]):not([tabindex]).btn-dark:active, a.btn:not([href]):not([tabindex]).btn-dark.active { background-color: rgba(255, 255, 255, 0.6); border-color: #000000; color: #000; border-width: 1px; }
+
+button.btn.btn-white.btn-outline, button.btn.btn-light.btn-outline, .btn:not(.close):not(.mfp-close).btn-white.btn-outline, .btn:not(.close):not(.mfp-close).btn-light.btn-outline, a.btn:not([href]):not([tabindex]).btn-white.btn-outline, a.btn:not([href]):not([tabindex]).btn-light.btn-outline { border-color: #fff; background-color: rgba(0, 0, 0, 0.33); color: #fff; border-width: 1px; }
+
+button.btn.btn-white.btn-outline:hover, button.btn.btn-white.btn-outline:focus, button.btn.btn-white.btn-outline:active, button.btn.btn-white.btn-outline.active, button.btn.btn-light.btn-outline:hover, button.btn.btn-light.btn-outline:focus, button.btn.btn-light.btn-outline:active, button.btn.btn-light.btn-outline.active, .btn:not(.close):not(.mfp-close).btn-white.btn-outline:hover, .btn:not(.close):not(.mfp-close).btn-white.btn-outline:focus, .btn:not(.close):not(.mfp-close).btn-white.btn-outline:active, .btn:not(.close):not(.mfp-close).btn-white.btn-outline.active, .btn:not(.close):not(.mfp-close).btn-light.btn-outline:hover, .btn:not(.close):not(.mfp-close).btn-light.btn-outline:focus, .btn:not(.close):not(.mfp-close).btn-light.btn-outline:active, .btn:not(.close):not(.mfp-close).btn-light.btn-outline.active, a.btn:not([href]):not([tabindex]).btn-white.btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-white.btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-white.btn-outline:active, a.btn:not([href]):not([tabindex]).btn-white.btn-outline.active, a.btn:not([href]):not([tabindex]).btn-light.btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-light.btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-light.btn-outline:active, a.btn:not([href]):not([tabindex]).btn-light.btn-outline.active { background-color: rgba(255, 255, 255, 0.69); border-color: #fff; color: #000000; border-width: 1px; }
+
+button.btn.btn-white, button.btn.btn-light, .btn:not(.close):not(.mfp-close).btn-white, .btn:not(.close):not(.mfp-close).btn-light, a.btn:not([href]):not([tabindex]).btn-white, a.btn:not([href]):not([tabindex]).btn-light { background-color: #fff; border-color: #fff; color: #000; border-width: 1px; }
+
+button.btn.btn-white:hover, button.btn.btn-white:focus, button.btn.btn-white:active, button.btn.btn-white.active, button.btn.btn-light:hover, button.btn.btn-light:focus, button.btn.btn-light:active, button.btn.btn-light.active, .btn:not(.close):not(.mfp-close).btn-white:hover, .btn:not(.close):not(.mfp-close).btn-white:focus, .btn:not(.close):not(.mfp-close).btn-white:active, .btn:not(.close):not(.mfp-close).btn-white.active, .btn:not(.close):not(.mfp-close).btn-light:hover, .btn:not(.close):not(.mfp-close).btn-light:focus, .btn:not(.close):not(.mfp-close).btn-light:active, .btn:not(.close):not(.mfp-close).btn-light.active, a.btn:not([href]):not([tabindex]).btn-white:hover, a.btn:not([href]):not([tabindex]).btn-white:focus, a.btn:not([href]):not([tabindex]).btn-white:active, a.btn:not([href]):not([tabindex]).btn-white.active, a.btn:not([href]):not([tabindex]).btn-light:hover, a.btn:not([href]):not([tabindex]).btn-light:focus, a.btn:not([href]):not([tabindex]).btn-light:active, a.btn:not([href]):not([tabindex]).btn-light.active { border-color: #fff; background-color: rgba(0, 0, 0, 0.63); color: #fff; border-width: 1px; }
+
+.portfolio-more-btn-wrapper {text-align: center;padding: 0 7.5px; margin-top: 20px; }
+.portfolio-more-btn { cursor: pointer; display: inline-block; padding: 0.6rem 1.5rem; background-color: #333333; color: #fff; border-radius: 0.5rem; }
+
+/* ----------------------------------------------------------------------
+Headings
+-------------------------------------------------------------------------*/
+/* Paragraph font size, line height and color changes */
+.heading-text.heading-section p { font-size: 1.125rem; font-weight: 400; }
+.heading-text.heading-section p span { font-size: 1.125rem; font-weight: 400; }
+
+.heading-text.heading-section h2 { position: relative; font-size: 2.35714286em; line-height: 56px; margin-bottom: 60px; }
+.heading-text.heading-section > h2:before { background-color: transparent; /* Outline under title changed to transparent */ }
+
+/* ----------------------------------------------------------------
+Typography : Font size
+-----------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7, { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: 0px; }
+
+/* ----------------------------------------------------------------
+Scroll top
+-----------------------------------------------------------------*/
+#scrollTop { border-radius: 0px; }
+#scrollTop:after, #scrollTop:before { border-radius: 0px; }
+#scrollTop:after, #scrollTop:before {
+    background-color: #002555;
+}
+
+/* ----------------------------------------------------------------
+Blockquotes
+-----------------------------------------------------------------*/
+.blockquote { border-left: 4px solid #002555; font-size: 18px; padding: 2px 0 0 30px; margin: 0 0 30px; }
+
+/* ----------------------------------------------------------------------
+Counters
+-------------------------------------------------------------------------*/
+.icon-box.medium.skills > h3, .icon-box.medium.skills > h4, .icon-box.medium.skills > h5 { margin: 0 12px 10px 0; }
+.icon-box.medium.skills > p { margin: 0 0 20px 0; }
+.icon-box.skills { margin-bottom: 10px!important; }
+.icon-box.small.skills > h3, .icon-box.small > h5 { font-size: 17.3px; }
+
+/* ----------------------------------------------------------------
+Grid Filter
+-----------------------------------------------------------------*/
+.grid-filter.gf-classic li a { color: #3c4043; border-radius: 4px; }
+.grid-filter.gf-classic li:hover a, .grid-filter.gf-classic li.active a { background-color: #3c4043; color: #fff; }
+.grid-active-title { font-size: 1.3rem; font-weight: 400; opacity: 0.9; top: 3px; }
+
+/* ----------------------------------------------------------------
+    Testimonial
+-----------------------------------------------------------------*/
+.testimonial.testimonial-single .testimonial-item {
+    padding: 30px 0px;
+}
+
+/* ----------------------------------------------------------------
+Helpers
+-----------------------------------------------------------------*/
+/* Background lightblue color */
+.background-lightblue { background-color: #f1f6fc !important;  }
+.background-blue { background-color: #002555 !important;  }
+
+/*Margins*/
+.p-b-180 { padding-bottom: 180px !important; }
+.p-t-180 { padding-top: 180px !important; }
+
+.p-b-190 { padding-bottom: 190px !important; }
+.p-t-190 { padding-top: 190px !important; }
+
+.p-b-300 { padding-bottom: 300px !important; }
+.p-t-300 { padding-top: 300px !important; }
+
+/*! Polo components */
+form label { font-size: 1.28rem; }
+
+/*! Polo components */
+.form-control { padding: 1rem 1rem; font-size: 1rem; background-color: rgba(255, 255, 255, 0.73); }
+
+.bg-overlay[data-style="2"] { background: rgba(14, 17, 26, 0.9); /* Changes background overlay 02 color and opacity */ }
+
+.breadcrumb { letter-spacing: 0px; }
+
+.background-dark { background-color: #111111 !important; }
+
+.ellipsis { text-overflow: ellipsis; /* enables ellipsis */ white-space: nowrap; /* keeps the text in a single line */ overflow: hidden; /* keeps the element from overflowing its parent */ }
+
+/*Parallax Stuff*/
+.my-work-hero div:not(.alert) { background-position-y: 17%!important; /* Moves hero image on my work pg */ }
+.about-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on about pg */ }
+.patent-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on about pg */ }
+.contact-hero div:not(.alert) { background-position-y: 11%!important; /* Moves hero image on contact pg */ }
+.demo-hero div:not(.alert) { background-position-y: 9%!important; /* Moves parallax section image on */ }
+
+.hero-01-parallax div:not(.alert) { background-position-y: 50%!important; /* Moves parallax header on hero 01 */ }
+
+.logo-02-hero div:not(.alert) { background-position-y: 50%!important; /* Moves hero image on branding 02 pg */ }
+.logo-03-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on branding 03 pg */ }
+.logo-05-hero div:not(.alert) { background-position-y: 33%!important; /* Moves hero image on branding 04 pg */ }
+
+.digital-store-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital store 01 pg */ }
+.digital-email-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital email 01 pg */ }
+.digital-email-02-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on digital email 02 pg */ }
+.digital-social-01-hero div:not(.alert) { background-position-y: bottom!important; /* Moves hero image on digital social 01 pg */ }
+
+.print-01-hero div:not(.alert) { background-position-y: 50%!important; /* Moves hero image on print 01 pg */ }
+.print-02-hero div:not(.alert) { background-position-y: 50%!important; /* Moves hero image on branding/print 02 pg */ }
+.print-03-hero div:not(.alert) { background-position-y: 63%!important; /* Moves hero image on print 03 pg */ }
+.print-04-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on print 04 pg */ }
+.print-05-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on branding/print 05 pg */ }
+.print-06-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 06 pg */ }
+
+.packaging-01-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 01 pg */ }
+.packaging-02-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 02 pg */ }
+.packaging-03-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 03 pg */ }
+
+.ads-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 01 pg */ }
+.ads-02-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 02 pg */ }
+.ads-03-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 03 pg */ }
+.ads-04-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 04 pg */ }
+.ads-05-hero div:not(.alert) { background-position-y: 15%!important; /* Moves hero image on print 05 pg */ }
+.ads-06-hero div:not(.alert) { background-position-y: 15%!important; /* Moves hero image on print 06 pg */ }
+
+.promo-01-hero div:not(.alert) { background-position-y: 90%!important; /* Moves hero image on promo 01 pg */ }
+.promo-02-hero div:not(.alert) { background-position-y: 27%!important; /* Moves hero image on promo 02 pg */ }
+.promo-03-hero div:not(.alert) { background-position-y: 27%!important; /* Moves hero image on promo 03 pg */ }
+
+.tradeshow-portfolio-hero div:not(.alert) { background-position-y: 70%!important; /* Moves parallax header on photo portfolio */ }
+.tradeshow-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on tradeshow 01 pg */ }
+.tradeshow-02-hero div:not(.alert) { background-position-y: 5%!important; /* Moves hero image on tradeshow 02 pg */ }
+.tradeshow-03-hero div:not(.alert) { background-position-y: 5%!important; /* Moves hero image on tradeshow 03 pg */ }
+.tradeshow-04-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on tradeshow 04 pg */ }
+.tradeshow-05-hero div:not(.alert) { background-position: bottom!important; /* Moves hero image on tradeshow 05 pg */ }
+
+.photo-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on photo 01 pg */ }
+.photo-02-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on photo 02 pg */ }
+.photo-03-hero div:not(.alert) { background-position-y: 70%!important; /* Moves hero image on photo 03 pg */ }
+.photo-04-hero div:not(.alert) { background-position-y: 20%!important; /* Moves hero image on photo 04 pg */ }
+.photo-05-hero div:not(.alert) { background-position-y: 15%!important; /* Moves hero image on photo 05 pg */ }
+
+#header.dark404 .header-inner { position: fixed; background-color: rgba(30, 32, 34, 0.95)!important; /* Adds menu to 404 page */ }
+.page-error-404 { color: #9fabb5; font-size: 20vi; }
+
+
+/* ----------------------------------------------------------------------
+Parallax
+-------------------------------------------------------------------------*/
+#page-title[data-bg-parallax], [data-bg-parallax] { background-color: #fff; }
+
+/*  Portfolio */
+/* ----------------------------------------------------------------
+Portfolio
+-----------------------------------------------------------------*/
+.portfolio-item.no-overlay .portfolio-description h3, .portfolio-item.no-overlay .grid-description h3, .grid-item.no-overlay .portfolio-description h3, .grid-item.no-overlay .grid-description h3 { color: #3c4043; font-size: 16px; font-style: normal; font-weight: 700; letter-spacing: 0px; line-height: 18px; margin-bottom: 0px; text-transform: capitalize;  /*Adjusts Title under portfolio item */ }
+
+.portfolio-item .portfolio-description h3, .portfolio-item.no-overlay .grid-description h3, .grid-item.no-overlay .portfolio-description h3, .grid-item.no-overlay .grid-description h3 { font-style: normal; font-weight: 600; letter-spacing: 0px; margin-bottom: 3px; text-transform: capitalize;  /*Adjusts Title under portfolio item */ }
+
+.portfolio-item .portfolio-description span, .portfolio-item.no-overlay .grid-description span, .grid-item.no-overlay .portfolio-description span, .grid-item.no-overlay .grid-description span { font-size: 15px; font-style: normal; font-weight: 300; letter-spacing: 0; line-height: 15px; text-transform: capitalize; opacity: 1; }
+
+.grid-item>img, .grid-item>a>img { width: 100%; height: auto; }
+
+/*Portfolio page*/
+.portfolio-attributes { font-size: 12px!important; margin-bottom: 0px; }
+.portfolio-attributes .attribute strong, .portfolio-attributes { font-size: 11px; }
+.portfolio-attributes .attribute strong { margin-bottom: 0px; }
+
+.portfolio-item .portfolio-description, .portfolio-item .grid-description, .portfolio-item .portfolio-links, .grid-item .portfolio-description, .grid-item .grid-description, .grid-item .portfolio-links { padding: 0px!important; }
+
+.services, .services p { margin-top: 15px; margin-bottom: 15px; }
+
+#header { position: fixed !important; }
+
+.kenburns-bg { background-position: 50% 20%; background-repeat: repeat-y; background-size: cover; height: 100%; position: absolute; top: 0; vertical-align: middle; width: 100%; z-index: -1; -webkit-transform: scale(1.14); -ms-transform: scale(1.14); transform: scale(1.14); -webkit-transition: 14s -webkit-transform ease; transition: 14s -webkit-transform ease; transition: 14s transform ease; transition: 14s transform ease, 14s -webkit-transform ease; }
+.kenburns-bg.kenburns-bg-animate { -webkit-transform: translate3d(0, 0, 0) scale(1); transform: translate3d(0, 0, 0) scale(1); }
+
+.zoom-out { -webkit-animation-name: zoom-out; animation-name: zoom-out; -webkit-transform: scale(1.14); -ms-transform: scale(1.14); transform: scale(1.14); opacity: 1; }
+
+#header[data-transparent="true"] + #page-title { top: -120px; margin-bottom: -124px; position: relative; padding: 300px 0 160px 0; }
+
+.copyright-content-404 { position: fixed; bottom: 0; width: 100%; }
+
+#contact element.style {
+    min-height: 58vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark #header .header-inner, .dark #header #header-wrap, #header.dark .header-inner, #header.dark #header-wrap {
+    background-color: transparent;
+}
+
+.grid-4-columns .grid-item.large-width-new, .post-4-columns .post-item.large-width-new, .portfolio-4-columns .portfolio-item.large-width-new { width: 100%; }
+
+/* ----------------------------------------------------------------
+Contact Page PHP Form 
+-----------------------------------------------------------------*/
+
+.form-control-lg {
+    padding: .5rem 0rem;
+}
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) {
+    line-height: 0px;
+}
+@media (max-width: 991.98px) {
+    button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) {
+        height: 40px!important;
+    }
+}
+
+/* ----------------------------------------------------------------
+End Contact Page PHP Form 
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+Mobile / Tablet Updates 
+-----------------------------------------------------------------*/
+@media (max-width: 991.98px) {
+	
+.header-extras { float: right!important; margin-top: 20px!important; /* Changed mobile menu button from left to right side*/ }
+	
+/* Side panel menu close button size and highlight color */
+side-panel-menu.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { font-size: 14px!important; font-weight: 600!important; text-transform: capitalize; padding: 12px 18px; }
+button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { background-color: rgba(0, 0, 0, 0.123); border: 1px solid rgba(0, 0, 0, 0.123); color: #3c4043; } 
+	
+/* Side panel close button size */
+side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.btn:not([href]):not([tabindex]).btn-transparent { font-size: 21px!important; font-weight: 300!important; padding: 12px 12px; }
+	
+#header #logo { text-align: left; background-color: rgba(30, 32, 34, 0.95); /* Aligns logo to left on mobile and fixes mobile menu to allow scrolling and adds bg color */ }
+#header.dark .header-inner #logo a .logo-dark { padding-left: 15px!important; /* Adds padding to logo on mobile */ }
+	
+button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { color: #fff; }
+.heading-text.heading-section h2 { position: relative; font-size: 2em; line-height: 56px; margin-bottom: 20px !important; }
+#header.dark404 .header-inner #logo a .logo-dark { padding-left: 15px!important; /* Adds padding to logo on mobile */ }
+	
+.header-extras > ul > li > a:not(.btn), .header-extras > ul > li > .p-dropdown { padding-left: 0px; padding-right: 0px; }
+	
+button.btn:not(.btn-creative):not(.btn-slide).btn-lg, .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide).btn-lg, a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide).btn-lg { font-size: 16px; height: 52px; line-height: 100%; padding: 16px 45px; font-weight: 600;  /* Adjusts button size on mobile */ }
+	
+button.btn.btn-dark.btn-fill, .btn:not(.close):not(.mfp-close).btn-dark.btn-fill, a.btn:not([href]):not([tabindex]).btn-dark.btn-fill { border-color: #fff;   /* Adds white outline to homepage button on mobile */ }
+	
+.heading-text h4 { font-size: 34px; margin-bottom: 30px; /* Adjusts title font size on mobile */ }
+	
+button.btn:not(.btn-creative):not(.btn-slide).btn-sm, .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide).btn-sm, a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide).btn-sm { font-size: 12px; height: 33px;  /* Adjusts mobile button */ }
+	
+.parallax-container.scrolly-invisible.img-loaded { background-position: 44% 0!important;  /* Adjusts demo section bg for mobile - move left */ }
+	
+button.btn:not(.btn-creative):not(.btn-slide).btn-lg, .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide).btn-lg, a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide).btn-lg { margin-left: 0px; }
+	
+button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) { height: 42px; padding: 4.5px 29px; letter-spacing: 0px!important; }
+	
+h1, .h1 { line-height: 1.11em; }
+#page-title .page-title > h1 { line-height: 51px!important; }
+	
+.inspiro-slider .slide .slide-captions h2 { font-size: 31px; line-height: 36px; }
+	
+#contact { padding-top: 80px!important; }
+#image-main-bg { padding-top: 30px !important; padding-bottom: 10px !important; }
+#image-bg { padding-top: 80px !important; }
+#image-bg-patent .parallax-container { background-position:76% 22%!important; }
+#image-bg-patent { padding-top: 90px !important; padding-bottom: 120px !important; }
+#image-bg-patent h2 { margin-bottom: 16px!important; }
+#image-bg-demo { padding-top: 200px !important; }
+#about { padding-top: 50px !important; padding-bottom: 0px !important; }
+#resume { padding-top: 150px !important; padding-bottom: 50px !important; }
+#cta { padding-top: 30px !important; padding-bottom: 40px !important; }
+#cta-main { padding-top: 50px !important; padding-bottom: 0px !important; }
+	
+.my-work-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on my work pg mobile */}
+.about-hero div:not(.alert) { background-position: right 90px!important; /* Moves hero image on about pg mobile */}
+.patent-hero div:not(.alert) { background-position-x: 44%!important; /* Moves bg image on about pg mobile */}
+.contact-hero div:not(.alert) { background-position: right 90px!important; /* Moves hero image on about pg mobile */}
+.hero-01-parallax div:not(.alert) { background-position-x: 49%!important; /* Moves parallax header on home pg mobile hero 01 */ }
+.hero-02-parallax div:not(.alert) { background-position-x: 30.6%!important; /* Moves parallax header on home pg mobile hero 02 */ }
+.hero-02-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 40%); mix-blend-mode: multiply; opacity: .83; background-color: #0e111a; /* Adds overlay to parallax header on mobile hero 02 */}
+.hero-03-parallax div:not(.alert) { background-position-x: 69.5%!important; /* Moves parallax header on home pg mobile hero 03 */ }
+.hero-03-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 40%); mix-blend-mode: normal; opacity: .93; background-color: #e0ecfc; /* Adds overlay to parallax header on mobile hero 03 */}
+.hero-04-parallax div:not(.alert) { background-position-x: 15%!important; /* Moves parallax header on home pg mobile hero 04 */ }
+.hero-04-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 40%); mix-blend-mode: multiply; opacity: .83; background-color: #0e111a; /* Adds overlay to parallax header on mobile hero 04 */}
+.hero-05-parallax div:not(.alert) { background-position-x: 0%!important; /* Moves parallax header on home pg mobile hero 05 */ }
+.hero-05-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 40%); mix-blend-mode: multiply; opacity: .83; background-color: #0e111a; /* Adds overlay to parallax header on mobile hero 05 */}
+.hero-06-parallax div:not(.alert) { background-position-x: 80%!important; /* Moves parallax header on home pg mobile hero 06 */ }
+.hero-06-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 40%); mix-blend-mode: normal; opacity: .93; background-color: #e0ecfc; /* Adds overlay to parallax header on home pg mobile hero 06 */ }
+.hero-07-parallax div:not(.alert) { background-position-x: 15%!important; /* Moves parallax header on hero 07 */ }
+.hero-07-parallax .bg-overlay { background: rgba(0, 0, 0, 0.69); mix-blend-mode: multiply; opacity: .83; /* Adds overlay to parallax header on home pg mobile hero 07 */}
+.hero-08-parallax div:not(.alert) { background-position-x: 21%!important; /* Moves parallax header on home pg mobile hero 08 */ }
+.hero-08-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 40%); mix-blend-mode: multiply; opacity: .83; background-color: #0e111a; /* Adds overlay to parallax header on mobile hero 08 */}
+	
+.logo-02-hero div:not(.alert) { background-position: left 33px!important; /* Moves hero image on branding 02 pg mobile */ }
+.logo-03-hero div:not(.alert) { background-position: right 83px!important; /* Moves hero image on branding 03 pg mobile */ }
+.logo-05-hero div:not(.alert) { background-position: -175px 133px!important; /* Moves hero image on branding 04 pg mobile */ }
+	
+.digital-store-01-hero div:not(.alert) { background-position: left 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
+.digital-email-01-hero div:not(.alert) { background-position: center 93px!important; /* Moves hero image on digital email 01 pg mobile */ }
+.digital-email-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on digital email 02 pg mobile */ }
+.digital-social-01-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on digital social 01 pg mobile */ }
+	
+.print-01-hero div:not(.alert) { background-position: left 100px!important; /* Moves hero image on print 01 pg mobile */ }
+.print-02-hero div:not(.alert) { background-position: center 50px!important; /* Moves hero image on branding/print 02 pg mobile */ }
+.print-03-hero div:not(.alert) { background-position: center 60px!important /* Moves hero image on print 03 pg mobile */ }
+.print-04-hero div:not(.alert) { background-position: center 83px!important /* Moves hero image on print 04 pg mobile */ }
+.print-05-hero div:not(.alert) { background-position: center 169px!important; /* Moves hero image on branding/print 05 pg mobile */ }
+.print-06-hero div:not(.alert) { background-position: center 169px!important; /* Moves hero image on print 06 pg mobile */ }
+	
+.packaging-01-hero div:not(.alert) { background-position: center 11px!important; /* Moves hero image on print 01 pg mobile */ }
+.packaging-02-hero div:not(.alert) { background-position: center 11px!important; /* Moves hero image on print 02 pg mobile */ }
+.packaging-03-hero div:not(.alert) { background-position: center!important; /* Moves hero image on print 03 pg mobile */ }
+	
+.ads-01-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 01 pg mobile */ }
+.ads-02-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 02 pg mobile */ }
+.ads-03-hero div:not(.alert) { background-position: center 10px!important; /* Moves hero image on print 03 pg mobile */ }
+.ads-04-hero div:not(.alert) { background-position: center 15px!important; /* Moves hero image on print 04 pg mobile */ }
+.ads-05-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 05 pg mobile */ }
+.ads-06-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 06 pg mobile */ }
+	
+.promo-01-hero div:not(.alert) { background-position: center 10px!important; /* Moves hero image on promo 01 pg mobile */ }
+.promo-02-hero div:not(.alert) { background-position: center 90px!important; /* Moves hero image on promo 02 pg mobile */ }
+.promo-03-hero div:not(.alert) { background-position: left 6px!important; /* Moves hero image on promo 03 pg mobile */ }
+	
+.tradeshow-01-hero div:not(.alert) { background-position: left 100px!important; /* Moves hero image on tradeshow 01 pg mobile */ }
+.tradeshow-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
+.tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
+.tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
+.tradeshow-05-hero div:not(.alert) { background-position: right!important; /* Moves hero image on tradeshow 04 pg mobile */ }
+	
+.photo-01-hero div:not(.alert) { background-position: right 128px!important; /* Moves hero image on photo 01 pg mobile */ }
+.photo-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on photo 02 pg mobile */ }
+.photo-03-hero div:not(.alert) { background-position: left 33px!important; /* Moves hero image on photo 03 pg mobile */ }
+.photo-04-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on photo 04 pg mobile */ }
+.photo-05-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on photo 05 pg mobile */ }
+	
+#header[data-transparent="true"] + #page-title { padding: 234px 0 123px 0; background-size: cover;  /* Adjusts hero image height for mobile - move down */ }
+	
+.page-menu a:not(.btn) { font-size: 13px; color: #0276FD; font-weight: 500; font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
+.page-menu { text-align: center; list-style-type: none; }
+.grid-filter ul { text-align: center; }
+	
+h2, .h2 { line-height: 1.1em; padding-bottom: 0px; }
+	
+.portfolio-attributes .attribute { padding-right: 30px; }
+	
+.inspiro-slider .slide .slide-captions { text-align: center!important; }
+	
+.shape-divider svg { width: 222%; }
+	
+.icon-box.center p { font-size: 15px; margin-top: 15px; }
+	
+.portfolio-item .portfolio-description h3, .portfolio-item.no-overlay .grid-description h3, .grid-item.no-overlay .portfolio-description h3, .grid-item.no-overlay .grid-description h3 { margin-bottom: 9px;  /*Adjusts Title under portfolio item */ }
+	
+.services, .services p { margin: 0px 0px 20px; padding: 0px 0px 10px; }
+	
+.icon-box.process { padding: 30px 20px;  /*Adjusts Patents mobile box */ }
+	
+#header #home-page #logo { text-align: left;  /* Turns off mobile menu bg */  }
+	
+.scroller section { height: 100vh!important; /* Adjusts hero sections on scroll stop snap on home pg mobile landscape */}
+	
+#footer .footer-content { padding: 0px 0px 0px 0px; }
+#contact { padding-bottom: 10px!important; }
+	
+.bg-overlay-mobile { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; content: ' '; z-index: 0; background: -webkit-linear-gradient(top, #000 25%, #fff 90%); background: linear-gradient(180deg, #fff 25%, #000 90%); opacity: .9; mix-blend-mode: multiply; } /* Replaces hero image on home page banner slide 01 pg mobile */
+
+.hero-01-mobile { background-image: url(../images/pages/hero-01-mobile.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile portrait */ }
+.hero-02-mobile { background-image: url(../images/pages/hero-02-mobile.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile portrait */ }
+.hero-03-mobile { background-image: url(../images/pages/hero-03-mobile.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile portrait */ }
+.hero-04-mobile { background-image: url(../images/pages/hero-04-mobile.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile portrait */ }
+.hero-05-mobile { background-image: url(../images/pages/hero-05-mobile.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile */ }
+.hero-06-mobile { background-image: url(../images/pages/hero-06-mobile.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile */ }
+.hero-07-mobile { background-image: url(../images/pages/hero-07-mobile.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile */ }
+.hero-08-mobile { background-image: url(../images/pages/hero-08-mobile.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile */ }
+
+.inspiro-slider .container { padding-left: 0px!important; padding-right: 0px!important; }
+	
+.env { padding-left: max(10px, env(safe-area-inset-left))!important; padding-right: max(10px, env(safe-area-inset-right))!important; }
+
+.inspiro-slider .flickity-page-dots { bottom: 135px; /* Set slider page dots higher */ }
+	
+#skills-main.row { text-align: center; }
+#skills-main.row p { font-size: 1.125rem; margin-bottom: 1.6rem; }
+	
+#about { text-align: center; }
+#about p { margin-bottom: 1.6rem; }
+	
+.testimonial.testimonial-left .testimonial-item > img { height: 140px; width: 140px; }
+.testimonial.testimonial-single .testimonial-item { padding: 0; }
+	
+}
+
+.row-hero>* {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .25);
+    padding-left: calc(var(--bs-gutter-x)* .25);
+    margin-top: var(--bs-gutter-y);
+}
+
+/* ----------------------------------------------------------------
+Mobile Landscape Updates 
+-----------------------------------------------------------------*/
+@media (orientation: landscape) {
+.bg-overlay-mobile {background: none;}
+.hero-01-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-01.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile landscape */ }
+div.slide-captions.text-left.hero-01 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
+.hero-02-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-02.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile landscape */ }
+div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
+.hero-03-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-03.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile landscape */ }
+div.slide-captions.text-left.hero-03 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
+.hero-04-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-04.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile landscape */ }
+div.slide-captions.text-end.hero-04 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
+.hero-05-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-05.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile landscape */ }
+div.slide-captions.text-center.text-light.hero-05 { text-align: center!important; /* Aligns Captions to the right on home page banner slide 05 pg mobile landscape */ }
+.hero-06-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-06.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile landscape */ }
+div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
+.hero-07-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-07.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile landscape */ }
+div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
+.hero-08-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
+div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
+
+/* ----------------------------------------------------------------
+Slider Button Changes
+-----------------------------------------------------------------*/
+.inspiro-slider .flickity-page-dots { bottom: 30px; /* Set slider page dots higher */ }
+
+@media only screen 
+and (min-device-width: 428px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) {
+h3, .h3 { font-size: 1.35714286em; line-height: 1.85714286em!important; }
+
+.hero-02-parallax .inspiro-slider .slide .slide-captions { text-align: right!important; /* Aligns text on home pg mobile landscape hero 02 */ }
+.hero-02-parallax .bg-overlay { opacity: 0; /* Adjusts background overlay on home pg mobile landscape hero 02 */ }
+.inspiro-slider .slide .slide-captions .hero-02 { text-align: end!important; }
+.hero-03-parallax .inspiro-slider .slide .slide-captions { text-align: left!important; /* Aligns text on home pg mobile landscape hero 03 */ }
+.hero-03-parallax .bg-overlay { opacity: 0; /* Turns off background overlay on home pg mobile landscape hero 03 */ }
+.hero-04-parallax .inspiro-slider .slide .slide-captions { text-align: right!important; /* Aligns text on home pg mobile landscape hero 04 */ }
+.hero-04-parallax .bg-overlay { opacity: 0; /* Turns off background overlay on home pg mobile landscape hero 04 */ }
+.hero-04-parallax div:not(.alert) { background-position-y: 44%!important; }
+.hero-06-parallax .inspiro-slider .slide .slide-captions { text-align: left!important; /* Aligns text on home pg mobile landscape hero 06 */ }
+.hero-06-parallax .bg-overlay { opacity: 0; /* Turns off background overlay on home pg mobile landscape hero 06 */ }
+.hero-06-parallax div:not(.alert) { background-position-y: 36%!important; }
+.hero-07-parallax .inspiro-slider .slide .slide-captions { text-align: right!important; /* Aligns text on home pg mobile landscape hero 07 */ }
+.hero-07-parallax div:not(.alert) { background-position-y: 33%!important; }
+.hero-08-parallax .inspiro-slider .slide .slide-captions { text-align: left!important; /* Aligns text on home pg mobile landscape hero 08 */ }
+.hero-08-parallax div:not(.alert) { background-position-y: 50%!important; /* Moves hero image on home pg mobile landscape hero 08 */}
+.hero-08-parallax .bg-overlay { opacity: 0; /* Turns off background overlay on home pg mobile landscape hero 08 */ }
+
+.scroller section { height: 100vh; /* Adjusts hero sections on scroll stop snap on home pg mobile landscape */}
+
+.bottom-center { top: 95%;/* Adjusts footer padding on home pg mobile landscape */}
+	
+h3, .h3 { font-size: 1.35714286em; line-height: 1.286em!important; }
+
+.page-error-404 { font-size: 100px; }
+h1#footer-h1.text-medium.fw-700 { font-size: 25px !important; }
+	
+}
+}
+
+/* ----------------------------------------------------------------
+Mobile / Tablet Portrait Updates 
+-----------------------------------------------------------------*/
+@media (max-width: 991.98px) and (orientation: portrait) {
+	
+.inspiro-slider .slide .container, .inspiro-slider .slide .container-wide { position: absolute; bottom: 77px; max-width: 100%;  /*Moves hero text to bottom on mobile*/ }
+.flickity-button { visibility: hidden; }
+h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
+	
+}
+
+.down-bg {
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246, 252, 1));
+}
