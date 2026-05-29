@@ -1,0 +1,9 @@
+# robots.txt for theronneff.wuaze.com
+User-agent: *
+Disallow:
+
+# Block common server-side directories that should not be crawled
+Disallow: /cgi-bin/
+
+# Point to the canonical sitemap (non-www matches your canonical link rel)
+Sitemap: https://theronneff.wuaze.com/sitemap.xml

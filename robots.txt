@@ -1,0 +1,5 @@
+# robots.txt for theronneff.wuaze.com
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://theronneff.wuaze.com/sitemap.xml
