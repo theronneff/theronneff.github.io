@@ -1,11 +1,11 @@
-/*! Bootstrap integration for DataTables' AutoFill
+/*! Foundation integration for DataTables' AutoFill
  * ©2015 SpryMedia Ltd - datatables.net/license
  */
 
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define( ['jquery', 'datatables.net-bs', 'datatables.net-autofill'], function ( $ ) {
+		define( ['jquery', 'datatables.net-zf', 'datatables.net-autofill'], function ( $ ) {
 			return factory( $, window, document );
 		} );
 	}
@@ -17,7 +17,7 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require('datatables.net-bs')(root, $).$;
+				$ = require('datatables.net-zf')(root, $).$;
 			}
 
 			if ( ! $.fn.dataTable.AutoFill ) {
@@ -36,7 +36,7 @@
 var DataTable = $.fn.dataTable;
 
 
-DataTable.AutoFill.classes.btn = 'btn btn-primary';
+DataTable.AutoFill.classes.btn = 'button tiny';
 
 
 return DataTable;
