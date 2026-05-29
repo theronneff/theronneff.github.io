@@ -32,7 +32,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:b
   font-family: 'Courier New', Courier, monospace;
   line-height: 14px;
   content: '+';
-  background-color: #337ab7;
+  background-color: #31b131;
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child:before {
@@ -78,7 +78,7 @@ table.dataTable.dtr-column > tbody > tr > th.control:before {
   font-family: 'Courier New', Courier, monospace;
   line-height: 14px;
   content: '+';
-  background-color: #337ab7;
+  background-color: #31b131;
 }
 table.dataTable.dtr-column > tbody > tr.parent td.control:before,
 table.dataTable.dtr-column > tbody > tr.parent th.control:before {
@@ -174,7 +174,4 @@ div.dtr-modal div.dtr-modal-background {
   div.dtr-modal div.dtr-modal-display {
     width: 95%;
   }
-}
-div.dtr-bs-modal table.table tr:first-child td {
-  border-top: none;
 }
