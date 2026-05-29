@@ -31,6 +31,6 @@ div.dts div.dataTables_length {
   display: none;
 }
 
-div.DTS tbody tr {
+div.DTS div.dataTables_scrollBody table {
   background-color: white;
 }
