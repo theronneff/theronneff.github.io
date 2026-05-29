@@ -1,11 +1,11 @@
-/*! Bootstrap integration for DataTables' Buttons
+/*! jQuery UI integration for DataTables' Buttons
  * ©2016 SpryMedia Ltd - datatables.net/license
  */
 
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define( ['jquery', 'datatables.net-bs', 'datatables.net-buttons'], function ( $ ) {
+		define( ['jquery', 'datatables.net-jqui', 'datatables.net-buttons'], function ( $ ) {
 			return factory( $, window, document );
 		} );
 	}
@@ -17,7 +17,7 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require('datatables.net-bs')(root, $).$;
+				$ = require('datatables.net-jqui')(root, $).$;
 			}
 
 			if ( ! $.fn.dataTable.Buttons ) {
@@ -39,30 +39,22 @@ var DataTable = $.fn.dataTable;
 $.extend( true, DataTable.Buttons.defaults, {
 	dom: {
 		container: {
-			className: 'dt-buttons btn-group'
+			className: 'dt-buttons ui-buttonset'
 		},
 		button: {
-			className: 'btn btn-default'
+			className: 'dt-button ui-button ui-state-default ui-button-text-only',
+			disabled: 'ui-state-disabled',
+			active: 'ui-state-active'
 		},
-		collection: {
-			tag: 'ul',
-			className: 'dt-button-collection dropdown-menu',
-			button: {
-				tag: 'li',
-				className: 'dt-button',
-				active: 'active',
-				disabled: 'disabled'
-			},
-			buttonLiner: {
-				tag: 'a',
-				className: ''
-			}
+		buttonLiner: {
+			tag: 'span',
+			className: 'ui-button-text'
 		}
 	}
 } );
 
 DataTable.ext.buttons.collection.text = function ( dt ) {
-	return dt.i18n('buttons.collection', 'Collection <span class="caret">');
+	return dt.i18n('buttons.collection', 'Collection <span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s">');
 };
 
 

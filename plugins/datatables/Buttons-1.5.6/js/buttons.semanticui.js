@@ -5,7 +5,7 @@
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
 		// AMD
-		define( ['jquery', 'datatables.net-bs', 'datatables.net-buttons'], function ( $ ) {
+		define( ['jquery', 'datatables.net-se', 'datatables.net-buttons'], function ( $ ) {
 			return factory( $, window, document );
 		} );
 	}
@@ -17,7 +17,7 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				$ = require('datatables.net-bs')(root, $).$;
+				$ = require('datatables.net-se')(root, $).$;
 			}
 
 			if ( ! $.fn.dataTable.Buttons ) {
@@ -39,31 +39,18 @@ var DataTable = $.fn.dataTable;
 $.extend( true, DataTable.Buttons.defaults, {
 	dom: {
 		container: {
-			className: 'dt-buttons btn-group'
+			className: 'dt-buttons ui basic buttons'
 		},
 		button: {
-			className: 'btn btn-default'
+			tag: 'button',
+			className: 'ui button'
 		},
 		collection: {
-			tag: 'ul',
-			className: 'dt-button-collection dropdown-menu',
-			button: {
-				tag: 'li',
-				className: 'dt-button',
-				active: 'active',
-				disabled: 'disabled'
-			},
-			buttonLiner: {
-				tag: 'a',
-				className: ''
-			}
+			tag: 'div',
+			className: 'dt-button-collection ui basic vertical buttons'
 		}
 	}
 } );
-
-DataTable.ext.buttons.collection.text = function ( dt ) {
-	return dt.i18n('buttons.collection', 'Collection <span class="caret">');
-};
 
 
 return DataTable.Buttons;
