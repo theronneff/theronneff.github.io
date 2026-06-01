@@ -23,8 +23,17 @@
 	<meta name="title" property="og:title" content="Theron Neff | Digital, B2C Landing Pages">
 	<meta property="og:type" content="website">
 	
-	<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-	<link rel="alternate icon" href="/images/favicon.png">
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+    <!-- SVG for supporting browsers (Chrome, Firefox, Edge, etc.) -->
+	<link rel="icon" type="image/svg+xml" href="images/favicon-dark.svg" media="(prefers-color-scheme: dark)">
+	<link rel="icon" type="image/svg+xml" href="images/favicon-light.svg" media="(prefers-color-scheme: light)">
+
+	<!-- PNG as fallback for Safari and other browsers that do not support SVG favicons -->
+	<link rel="icon" type="image/png" href="images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+	<link rel="icon" type="image/png" href="images/favicon-light.png" media="(prefers-color-scheme: light)">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
     <!-- Document title -->
     <title>Theron Neff | Digital, B2C Landing Pages</title>
