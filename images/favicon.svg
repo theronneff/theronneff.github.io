@@ -2,7 +2,7 @@
 
 <style>
 .icon {
-    fill: #fff;
+    fill: #002555;
 }
 
 @media (prefers-color-scheme: dark) {
