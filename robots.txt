@@ -1,5 +1,5 @@
-# robots.txt for theronneff.wuaze.com
+# robots.txt for theronneff.github.io
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://theronneff.wuaze.com/sitemap.xml
+Sitemap: https://theronneff.github.io/sitemap.xml
