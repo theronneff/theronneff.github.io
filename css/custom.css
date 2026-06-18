@@ -598,21 +598,21 @@ Mobile Landscape Updates
 -----------------------------------------------------------------*/
 @media (orientation: landscape) {
 .bg-overlay-mobile {background: none;}
-.hero-01-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-01.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile landscape */ }
+.hero-01-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-01.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile landscape */ }
 div.slide-captions.text-left.hero-01 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
-.hero-02-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-02.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile landscape */ }
+.hero-02-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-02.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile landscape */ }
 div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
-.hero-03-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-03.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile landscape */ }
+.hero-03-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-03.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile landscape */ }
 div.slide-captions.text-left.hero-03 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
-.hero-04-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-04.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile landscape */ }
+.hero-04-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-04.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile landscape */ }
 div.slide-captions.text-end.hero-04 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
-.hero-05-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-05.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile landscape */ }
+.hero-05-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-05.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile landscape */ }
 div.slide-captions.text-center.text-light.hero-05 { text-align: center!important; /* Aligns Captions to the right on home page banner slide 05 pg mobile landscape */ }
-.hero-06-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-06.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile landscape */ }
+.hero-06-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-06.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile landscape */ }
 div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
-.hero-07-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-07.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile landscape */ }
+.hero-07-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-07.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile landscape */ }
 div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
-.hero-08-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
+.hero-08-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
 div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
 
 /* ----------------------------------------------------------------
