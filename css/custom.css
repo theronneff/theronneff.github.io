@@ -328,6 +328,7 @@ form label { font-size: 1.28rem; }
 .tradeshow-03-hero div:not(.alert) { background-position-y: 5%!important; /* Moves hero image on tradeshow 03 pg */ }
 .tradeshow-04-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on tradeshow 04 pg */ }
 .tradeshow-05-hero div:not(.alert) { background-position: bottom!important; /* Moves hero image on tradeshow 05 pg */ }
+.tradeshow-06-hero div:not(.alert) { background-position-y: 85%!important; /* Moves hero image on tradeshow 06 pg */ }
 
 .photo-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on photo 01 pg */ }
 .photo-02-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on photo 02 pg */ }
@@ -518,6 +519,7 @@ h1, .h1 { line-height: 1.11em; }
 .tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
 .tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
 .tradeshow-05-hero div:not(.alert) { background-position: right!important; /* Moves hero image on tradeshow 04 pg mobile */ }
+.tradeshow-06-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 06 mobile */ }
 	
 .photo-01-hero div:not(.alert) { background-position: right 128px!important; /* Moves hero image on photo 01 pg mobile */ }
 .photo-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on photo 02 pg mobile */ }
