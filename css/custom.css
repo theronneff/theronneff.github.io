@@ -328,7 +328,6 @@ form label { font-size: 1.28rem; }
 .tradeshow-03-hero div:not(.alert) { background-position-y: 5%!important; /* Moves hero image on tradeshow 03 pg */ }
 .tradeshow-04-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on tradeshow 04 pg */ }
 .tradeshow-05-hero div:not(.alert) { background-position: bottom!important; /* Moves hero image on tradeshow 05 pg */ }
-.tradeshow-06-hero div:not(.alert) { background-position-y: 85%!important; /* Moves hero image on tradeshow 06 pg */ }
 
 .photo-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on photo 01 pg */ }
 .photo-02-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on photo 02 pg */ }
@@ -518,8 +517,7 @@ h1, .h1 { line-height: 1.11em; }
 .tradeshow-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
 .tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
 .tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
-.tradeshow-05-hero div:not(.alert) { background-position: right!important; /* Moves hero image on tradeshow 05 pg mobile */ }
-.tradeshow-06-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 06 mobile */ }
+.tradeshow-05-hero div:not(.alert) { background-position: right!important; /* Moves hero image on tradeshow 04 pg mobile */ }
 	
 .photo-01-hero div:not(.alert) { background-position: right 128px!important; /* Moves hero image on photo 01 pg mobile */ }
 .photo-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on photo 02 pg mobile */ }
@@ -600,21 +598,21 @@ Mobile Landscape Updates
 -----------------------------------------------------------------*/
 @media (orientation: landscape) {
 .bg-overlay-mobile {background: none;}
-.hero-01-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-01.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile landscape */ }
+.hero-01-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-01.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile landscape */ }
 div.slide-captions.text-left.hero-01 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
-.hero-02-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-02.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile landscape */ }
+.hero-02-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-02.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile landscape */ }
 div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
-.hero-03-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-03.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile landscape */ }
+.hero-03-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-03.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile landscape */ }
 div.slide-captions.text-left.hero-03 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
-.hero-04-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-04.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile landscape */ }
+.hero-04-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-04.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile landscape */ }
 div.slide-captions.text-end.hero-04 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
-.hero-05-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-05.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile landscape */ }
+.hero-05-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-05.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile landscape */ }
 div.slide-captions.text-center.text-light.hero-05 { text-align: center!important; /* Aligns Captions to the right on home page banner slide 05 pg mobile landscape */ }
-.hero-06-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-06.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile landscape */ }
+.hero-06-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-06.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile landscape */ }
 div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
-.hero-07-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-07.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile landscape */ }
+.hero-07-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-07.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile landscape */ }
 div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
-.hero-08-mobile { background-image: url(https://www.theronneff.com/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
+.hero-08-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
 div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
 
 /* ----------------------------------------------------------------
