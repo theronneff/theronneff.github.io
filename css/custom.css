@@ -305,7 +305,7 @@ form label { font-size: 1.28rem; }
 .print-03-hero div:not(.alert) { background-position-y: 63%!important; /* Moves hero image on print 03 pg */ }
 .print-04-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on print 04 pg */ }
 .print-05-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on branding/print 05 pg */ }
-.print-06-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 06 pg */ }
+.print-06-hero div:not(.alert) { background-position-y: 6%!important; /* Moves hero image on print 06 pg */ }
 
 .packaging-01-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 01 pg */ }
 .packaging-02-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 02 pg */ }
