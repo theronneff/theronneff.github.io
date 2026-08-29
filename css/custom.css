@@ -210,7 +210,7 @@ Headings
 .heading-text.heading-section h2 { position: relative; font-size: 2.35714286em; line-height: 56px; margin-bottom: 60px; }
 .heading-text.heading-section > h2:before { background-color: transparent; /* Outline under title changed to transparent */ }
 
-#page-title .page-title > h1 { font-family: "Open Sans", "Helvetica", "Arial", sans-serif; font-size: 2.35714286em; line-height: 1.2; font-weight: 400; margin-bottom: 1rem; }
+#page-title .page-title > h1 { font-family: "Open Sans", "Helvetica", "Arial", sans-serif; line-height: 1.2; font-weight: 400; margin-bottom: 1rem; }
 
 /* ----------------------------------------------------------------
 Typography : Font size
@@ -340,8 +340,43 @@ form label { font-size: 1.28rem; }
 .photo-05-hero div:not(.alert) { background-position-y: 15%!important; /* Moves hero image on photo 05 pg */ }
 
 #header.dark404 .header-inner { position: fixed; background-color: rgba(30, 32, 34, 0.95)!important; /* Adds menu to 404 page */ }
-.page-error-404 { color: #9fabb5; font-size: 20vi; }
+.page-error-404 { color: #9fabb5; font-size: 20rem; }
 
+/* Remove the default solid CSS triangles for both arrows */
+.mfp-arrow-left::after, .mfp-arrow-left::before,
+.mfp-arrow-right::after, .mfp-arrow-right::before {
+  border: none !important;
+}
+
+/* Base styles to insert and center the new text characters */
+.mfp-arrow-left::after,
+.mfp-arrow-right::after {
+  color: #FFF !important; /* Change color here */
+  font-size: 50px !important; /* Adjust size here */
+  font-family: Arial, sans-serif !important;
+  line-height: 1 !important;
+  display: block !important;
+  
+  /* Center the character inside the clickable button area */
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+/* Insert the left arrow character */
+.mfp-arrow-left::after {
+  content: "‹" !important;
+}
+
+/* Insert the right arrow character */
+.mfp-arrow-right::after {
+  content: "›" !important;
+}
+
+.mfp-zoom-out.mfp-ready.mfp-bg {
+    opacity: 0.95;
+}
 
 /* ----------------------------------------------------------------------
 Parallax
