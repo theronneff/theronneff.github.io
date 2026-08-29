@@ -210,10 +210,12 @@ Headings
 .heading-text.heading-section h2 { position: relative; font-size: 2.35714286em; line-height: 56px; margin-bottom: 60px; }
 .heading-text.heading-section > h2:before { background-color: transparent; /* Outline under title changed to transparent */ }
 
+#page-title .page-title > h1 { font-family: "Open Sans", "Helvetica", "Arial", sans-serif; font-size: 2.35714286em; line-height: 1.2; font-weight: 400; margin-bottom: 1rem; }
+
 /* ----------------------------------------------------------------
 Typography : Font size
 -----------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7, { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: 0px; }
+h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7 { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: 0px; }
 
 /* ----------------------------------------------------------------
 Scroll top
@@ -527,8 +529,6 @@ h1, .h1 { line-height: 1.11em; }
 .photo-03-hero div:not(.alert) { background-position: left 33px!important; /* Moves hero image on photo 03 pg mobile */ }
 .photo-04-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on photo 04 pg mobile */ }
 .photo-05-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on photo 05 pg mobile */ }
-	
-#header[data-transparent="true"] + #page-title { padding: 234px 0 123px 0; background-size: cover;  /* Adjusts hero image height for mobile - move down */ }
 	
 .page-menu a:not(.btn) { font-size: 13px; color: #0276FD; font-weight: 500; font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
 .page-menu { text-align: center; list-style-type: none; }
