@@ -558,7 +558,7 @@ h1, .h1 { line-height: 1.11em; }
 .tradeshow-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
 .tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
 .tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
-.tradeshow-05-hero div:not(.alert) { background-position: right!important; /* Moves hero image on tradeshow 04 pg mobile */ }
+.tradeshow-05-hero div:not(.alert) { background-position: bottom right -88px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
 .tradeshow-06-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 06 mobile */ }
 	
 .photo-01-hero div:not(.alert) { background-position: right 128px!important; /* Moves hero image on photo 01 pg mobile */ }
