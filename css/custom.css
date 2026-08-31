@@ -297,7 +297,6 @@ form label { font-size: 1.28rem; }
 .logo-03-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on branding 03 pg */ }
 .logo-05-hero div:not(.alert) { background-position-y: 33%!important; /* Moves hero image on branding 04 pg */ }
 
-.digital-store-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital store 01 pg */ }
 .digital-email-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital email 01 pg */ }
 .digital-email-02-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on digital email 02 pg */ }
 .digital-social-01-hero div:not(.alert) { background-position-y: bottom!important; /* Moves hero image on digital social 01 pg */ }
