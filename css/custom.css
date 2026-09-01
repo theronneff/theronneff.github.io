@@ -550,6 +550,7 @@ h1, .h1 { line-height: 1.11em; }
 .digital-email-01-hero div:not(.alert) { background-position: center 60px!important; /* Moves hero image on digital email 01 pg mobile */ }
 .digital-email-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on digital email 02 pg mobile */ }
 .digital-social-01-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on digital social 01 pg mobile */ }
+.digital-web-01-hero div:not(.alert) { background-position: -30px 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
 	
 .print-01-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on print 01 pg mobile */ }
 .print-02-hero div:not(.alert) { background-position: center 50px!important; /* Moves hero image on branding/print 02 pg mobile */ }
@@ -557,6 +558,7 @@ h1, .h1 { line-height: 1.11em; }
 .print-04-hero div:not(.alert) { background-position: center 83px!important /* Moves hero image on print 04 pg mobile */ }
 .print-05-hero div:not(.alert) { background-position: center 169px!important; /* Moves hero image on branding/print 05 pg mobile */ }
 .print-06-hero div:not(.alert) { background-position: center 83px!important; /* Moves hero image on print 06 pg mobile */ }
+.print-08-hero div:not(.alert) { background-position: center 83px!important; /* Moves hero image on print 08 pg mobile */ }
 	
 .packaging-01-hero div:not(.alert) { background-position: center 11px!important; /* Moves hero image on print 01 pg mobile */ }
 .packaging-02-hero div:not(.alert) { background-position: center 11px!important; /* Moves hero image on print 02 pg mobile */ }
