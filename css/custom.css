@@ -77,7 +77,7 @@ button.btn.btn-transparent-menu:active, .btn:not(.close):not(.mfp-close).btn-tra
 .side-panel.side-panel-right #side-panel #close-panel { left: auto; right: 0; }
 
 /* Sticky Menu Header BG Color */
-#header .header-inner, #header #header-wrap { background-color: rgba(30, 32, 34, 0.95); }
+#header .header-inner, #header #header-wrap { background-color: rgba(30, 32, 34, 0.93); }
 
 #header .header-inner #logo a, #header .header-inner #logo a span, #header #header-wrap #logo a { line-height: 70px !important; display: inline-block!important; padding: 0 0 !important;  }
 
@@ -483,7 +483,7 @@ button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparen
 /* Side panel close button size */
 side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.btn:not([href]):not([tabindex]).btn-transparent { font-size: 21px!important; font-weight: 300!important; padding: 12px 12px; }
 	
-#header #logo { text-align: left; background-color: rgba(30, 32, 34, 0.95); /* Aligns logo to left on mobile and fixes mobile menu to allow scrolling and adds bg color */ }
+#header #logo { text-align: left; background-color: rgba(30, 32, 34, 0.93); /* Aligns logo to left on mobile and fixes mobile menu to allow scrolling and adds bg color */ }
 #header.dark .header-inner #logo a .logo-dark { padding-left: 15px!important; /* Adds padding to logo on mobile */ }
 	
 button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { color: #fff; }
@@ -551,7 +551,7 @@ h1, .h1 { line-height: 1.11em; }
 .digital-email-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on digital email 02 pg mobile */ }
 .digital-social-01-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on digital social 01 pg mobile */ }
 	
-.print-01-hero div:not(.alert) { background-position: left 100px!important; /* Moves hero image on print 01 pg mobile */ }
+.print-01-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on print 01 pg mobile */ }
 .print-02-hero div:not(.alert) { background-position: center 50px!important; /* Moves hero image on branding/print 02 pg mobile */ }
 .print-03-hero div:not(.alert) { background-position: center 60px!important /* Moves hero image on print 03 pg mobile */ }
 .print-04-hero div:not(.alert) { background-position: center 83px!important /* Moves hero image on print 04 pg mobile */ }
@@ -580,7 +580,7 @@ h1, .h1 { line-height: 1.11em; }
 .tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
 .tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
 .tradeshow-05-hero div:not(.alert) { background-position: bottom !important; /* Moves hero image on tradeshow 04 pg mobile */ }
-.tradeshow-06-hero div:not(.alert) { background-position: bottom !important; /* Moves hero image on tradeshow 06 mobile */ }
+.tradeshow-06-hero div:not(.alert) { background-position: top !important; /* Moves hero image on tradeshow 06 mobile */ }
 	
 .photo-01-hero div:not(.alert) { background-position: right 128px!important; /* Moves hero image on photo 01 pg mobile */ }
 .photo-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on photo 02 pg mobile */ }
