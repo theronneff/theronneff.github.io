@@ -384,6 +384,7 @@ form label { font-size: 1.28rem; }
 Parallax
 -------------------------------------------------------------------------*/
 #page-title[data-bg-parallax], [data-bg-parallax] { background-color: #fff; }
+
 #page-title {
   /* fixed height that won't change when logo/header height changes */
   height: 600px;
@@ -454,6 +455,9 @@ button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) 
 @media (max-width: 991.98px) {
     button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) {
         height: 40px!important;
+    }
+	#header[data-transparent="true"] + #page-title {
+        padding: 200px 0 0px 0;
     }
 }
 
@@ -538,12 +542,12 @@ h1, .h1 { line-height: 1.11em; }
 .hero-08-parallax div:not(.alert) { background-position-x: 21%!important; /* Moves parallax header on home pg mobile hero 08 */ }
 .hero-08-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 40%); mix-blend-mode: multiply; opacity: .83; background-color: #0e111a; /* Adds overlay to parallax header on mobile hero 08 */}
 	
-.logo-02-hero div:not(.alert) { background-position: left 33px!important; /* Moves hero image on branding 02 pg mobile */ }
+.logo-02-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on branding 02 pg mobile */ }
 .logo-03-hero div:not(.alert) { background-position: right 83px!important; /* Moves hero image on branding 03 pg mobile */ }
 .logo-05-hero div:not(.alert) { background-position: -175px 133px!important; /* Moves hero image on branding 04 pg mobile */ }
 	
-.digital-store-01-hero div:not(.alert) { background-position: left 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
-.digital-email-01-hero div:not(.alert) { background-position: center 93px!important; /* Moves hero image on digital email 01 pg mobile */ }
+.digital-store-01-hero div:not(.alert) { background-position: -111px 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
+.digital-email-01-hero div:not(.alert) { background-position: center 60px!important; /* Moves hero image on digital email 01 pg mobile */ }
 .digital-email-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on digital email 02 pg mobile */ }
 .digital-social-01-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on digital social 01 pg mobile */ }
 	
@@ -564,15 +568,15 @@ h1, .h1 { line-height: 1.11em; }
 .ads-03-hero div:not(.alert) { background-position: center 10px!important; /* Moves hero image on print 03 pg mobile */ }
 .ads-04-hero div:not(.alert) { background-position: center 15px!important; /* Moves hero image on print 04 pg mobile */ }
 .ads-05-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 05 pg mobile */ }
-.ads-06-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 06 pg mobile */ }
+.ads-06-hero div:not(.alert) { background-position: 0px 0px!important; /* Moves hero image on print 06 pg mobile */ }
 	
 .promo-01-hero div:not(.alert) { background-position: center 10px!important; /* Moves hero image on promo 01 pg mobile */ }
 .promo-02-hero div:not(.alert) { background-position: center 90px!important; /* Moves hero image on promo 02 pg mobile */ }
 .promo-03-hero div:not(.alert) { background-position: left 6px!important; /* Moves hero image on promo 03 pg mobile */ }
 .promo-04-hero div:not(.alert) { background-position-x: 50%!important; /* Moves hero image on promo 04 pg mobile */ }
 	
-.tradeshow-01-hero div:not(.alert) { background-position: left 100px!important; /* Moves hero image on tradeshow 01 pg mobile */ }
-.tradeshow-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
+.tradeshow-01-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on tradeshow 01 pg mobile */ }
+.tradeshow-02-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
 .tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
 .tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
 .tradeshow-05-hero div:not(.alert) { background-position: bottom !important; /* Moves hero image on tradeshow 04 pg mobile */ }
@@ -671,7 +675,8 @@ div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Cap
 div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
 .hero-08-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
 div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
-	
+
+#page-title {height: 564px;}
 
 .promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
 .packaging-04-hero div:not(.alert) { background-position: -30px 83px!important; /* Moves hero image on packaging 04 pg mobile */ }
@@ -723,6 +728,7 @@ Mobile / Tablet Portrait Updates
 .inspiro-slider .slide .container, .inspiro-slider .slide .container-wide { position: absolute; bottom: 77px; max-width: 100%;  /*Moves hero text to bottom on mobile*/ }
 .flickity-button { visibility: hidden; }
 h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
-
+	
+	
 }
 
