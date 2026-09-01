@@ -77,7 +77,7 @@ button.btn.btn-transparent-menu:active, .btn:not(.close):not(.mfp-close).btn-tra
 .side-panel.side-panel-right #side-panel #close-panel { left: auto; right: 0; }
 
 /* Sticky Menu Header BG Color */
-#header .header-inner, #header #header-wrap { background-color: rgba(30, 32, 34, 0.93); }
+#header .header-inner, #header #header-wrap { background-color: rgba(30, 32, 34, 0.95); }
 
 #header .header-inner #logo a, #header .header-inner #logo a span, #header #header-wrap #logo a { line-height: 70px !important; display: inline-block!important; padding: 0 0 !important;  }
 
@@ -210,12 +210,10 @@ Headings
 .heading-text.heading-section h2 { position: relative; font-size: 2.35714286em; line-height: 56px; margin-bottom: 60px; }
 .heading-text.heading-section > h2:before { background-color: transparent; /* Outline under title changed to transparent */ }
 
-#page-title .page-title > h1 { font-family: "Open Sans", "Helvetica", "Arial", sans-serif; line-height: 1.2; font-weight: 400; margin-bottom: 1rem; }
-
 /* ----------------------------------------------------------------
 Typography : Font size
 -----------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7 { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: 0px; }
+h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7, { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: 0px; }
 
 /* ----------------------------------------------------------------
 Scroll top
@@ -297,6 +295,7 @@ form label { font-size: 1.28rem; }
 .logo-03-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on branding 03 pg */ }
 .logo-05-hero div:not(.alert) { background-position-y: 33%!important; /* Moves hero image on branding 04 pg */ }
 
+.digital-store-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital store 01 pg */ }
 .digital-email-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital email 01 pg */ }
 .digital-email-02-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on digital email 02 pg */ }
 .digital-social-01-hero div:not(.alert) { background-position-y: bottom!important; /* Moves hero image on digital social 01 pg */ }
@@ -306,12 +305,11 @@ form label { font-size: 1.28rem; }
 .print-03-hero div:not(.alert) { background-position-y: 63%!important; /* Moves hero image on print 03 pg */ }
 .print-04-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on print 04 pg */ }
 .print-05-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on branding/print 05 pg */ }
-.print-06-hero div:not(.alert) { background-position-y: 6%!important; /* Moves hero image on print 06 pg */ }
+.print-06-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 06 pg */ }
 
 .packaging-01-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 01 pg */ }
 .packaging-02-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 02 pg */ }
 .packaging-03-hero div:not(.alert) { background-position-y: 93%!important; /* Moves hero image on print 03 pg */ }
-.packaging-04-hero div:not(.alert) { background-position-y: 16%!important; /* Moves hero image on print 04 pg */ }
 
 .ads-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 01 pg */ }
 .ads-02-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on print 02 pg */ }
@@ -323,7 +321,6 @@ form label { font-size: 1.28rem; }
 .promo-01-hero div:not(.alert) { background-position-y: 90%!important; /* Moves hero image on promo 01 pg */ }
 .promo-02-hero div:not(.alert) { background-position-y: 27%!important; /* Moves hero image on promo 02 pg */ }
 .promo-03-hero div:not(.alert) { background-position-y: 27%!important; /* Moves hero image on promo 03 pg */ }
-.promo-04-hero div:not(.alert) { background-position-y: 30%!important; /*  Moves hero image on promo 04 pg */ }
 
 .tradeshow-portfolio-hero div:not(.alert) { background-position-y: 70%!important; /* Moves parallax header on photo portfolio */ }
 .tradeshow-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on tradeshow 01 pg */ }
@@ -331,7 +328,6 @@ form label { font-size: 1.28rem; }
 .tradeshow-03-hero div:not(.alert) { background-position-y: 5%!important; /* Moves hero image on tradeshow 03 pg */ }
 .tradeshow-04-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on tradeshow 04 pg */ }
 .tradeshow-05-hero div:not(.alert) { background-position: bottom!important; /* Moves hero image on tradeshow 05 pg */ }
-.tradeshow-06-hero div:not(.alert) { background-position-y: 85%!important; /* Moves hero image on tradeshow 06 pg */ }
 
 .photo-01-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on photo 01 pg */ }
 .photo-02-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on photo 02 pg */ }
@@ -340,63 +336,13 @@ form label { font-size: 1.28rem; }
 .photo-05-hero div:not(.alert) { background-position-y: 15%!important; /* Moves hero image on photo 05 pg */ }
 
 #header.dark404 .header-inner { position: fixed; background-color: rgba(30, 32, 34, 0.95)!important; /* Adds menu to 404 page */ }
-.page-error-404 { color: #9fabb5; font-size: 20rem; }
+.page-error-404 { color: #9fabb5; font-size: 20vi; }
 
-/* Remove the default solid CSS triangles for both arrows */
-.mfp-arrow-left::after, .mfp-arrow-left::before,
-.mfp-arrow-right::after, .mfp-arrow-right::before {
-  border: none !important;
-}
-
-/* Base styles to insert and center the new text characters */
-.mfp-arrow-left::after,
-.mfp-arrow-right::after {
-  color: #FFF !important; /* Change color here */
-  font-size: 50px !important; /* Adjust size here */
-  font-family: Arial, sans-serif !important;
-  line-height: 1 !important;
-  display: block !important;
-  
-  /* Center the character inside the clickable button area */
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(-50%, -50%);
-}
-
-/* Insert the left arrow character */
-.mfp-arrow-left::after {
-  content: "‹" !important;
-}
-
-/* Insert the right arrow character */
-.mfp-arrow-right::after {
-  content: "›" !important;
-}
-
-.mfp-zoom-out.mfp-ready.mfp-bg {
-    opacity: 0.95;
-}
-
-.mfp-title { font-size: 14px; }
 
 /* ----------------------------------------------------------------------
 Parallax
 -------------------------------------------------------------------------*/
 #page-title[data-bg-parallax], [data-bg-parallax] { background-color: #fff; }
-
-#page-title {
-  /* fixed height that won't change when logo/header height changes */
-  height: 600px;
-  min-height: 420px; /* fallback on small viewports */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px; /* inner spacing only */
-  box-sizing: border-box;
-  background: url('/path/to/hero.jpg') center/cover no-repeat;
-  position: relative;
-}
 
 /*  Portfolio */
 /* ----------------------------------------------------------------
@@ -456,18 +402,11 @@ button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) 
     button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) {
         height: 40px!important;
     }
-	#header[data-transparent="true"] + #page-title {
-        padding: 200px 0 0px 0;
-    }
 }
 
 /* ----------------------------------------------------------------
 End Contact Page PHP Form 
 -----------------------------------------------------------------*/
-
-.down-bg {
-background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246, 252, 1));
-}
 
 /* ----------------------------------------------------------------
 Mobile / Tablet Updates 
@@ -483,7 +422,7 @@ button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparen
 /* Side panel close button size */
 side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.btn:not([href]):not([tabindex]).btn-transparent { font-size: 21px!important; font-weight: 300!important; padding: 12px 12px; }
 	
-#header #logo { text-align: left; background-color: rgba(30, 32, 34, 0.93); /* Aligns logo to left on mobile and fixes mobile menu to allow scrolling and adds bg color */ }
+#header #logo { text-align: left; background-color: rgba(30, 32, 34, 0.95); /* Aligns logo to left on mobile and fixes mobile menu to allow scrolling and adds bg color */ }
 #header.dark .header-inner #logo a .logo-dark { padding-left: 15px!important; /* Adds padding to logo on mobile */ }
 	
 button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { color: #fff; }
@@ -507,6 +446,7 @@ button.btn:not(.btn-creative):not(.btn-slide).btn-lg, .btn:not(.close):not(.mfp-
 button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) { height: 42px; padding: 4.5px 29px; letter-spacing: 0px!important; }
 	
 h1, .h1 { line-height: 1.11em; }
+#page-title .page-title > h1 { line-height: 51px!important; }
 	
 .inspiro-slider .slide .slide-captions h2 { font-size: 31px; line-height: 36px; }
 	
@@ -542,53 +482,50 @@ h1, .h1 { line-height: 1.11em; }
 .hero-08-parallax div:not(.alert) { background-position-x: 21%!important; /* Moves parallax header on home pg mobile hero 08 */ }
 .hero-08-parallax .bg-overlay { background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 40%); mix-blend-mode: multiply; opacity: .83; background-color: #0e111a; /* Adds overlay to parallax header on mobile hero 08 */}
 	
-.logo-02-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on branding 02 pg mobile */ }
+.logo-02-hero div:not(.alert) { background-position: left 33px!important; /* Moves hero image on branding 02 pg mobile */ }
 .logo-03-hero div:not(.alert) { background-position: right 83px!important; /* Moves hero image on branding 03 pg mobile */ }
 .logo-05-hero div:not(.alert) { background-position: -175px 133px!important; /* Moves hero image on branding 04 pg mobile */ }
 	
-.digital-store-01-hero div:not(.alert) { background-position: -111px 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
-.digital-email-01-hero div:not(.alert) { background-position: center 60px!important; /* Moves hero image on digital email 01 pg mobile */ }
+.digital-store-01-hero div:not(.alert) { background-position: left 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
+.digital-email-01-hero div:not(.alert) { background-position: center 93px!important; /* Moves hero image on digital email 01 pg mobile */ }
 .digital-email-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on digital email 02 pg mobile */ }
 .digital-social-01-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on digital social 01 pg mobile */ }
-.digital-web-01-hero div:not(.alert) { background-position: -30px 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
 	
-.print-01-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on print 01 pg mobile */ }
+.print-01-hero div:not(.alert) { background-position: left 100px!important; /* Moves hero image on print 01 pg mobile */ }
 .print-02-hero div:not(.alert) { background-position: center 50px!important; /* Moves hero image on branding/print 02 pg mobile */ }
 .print-03-hero div:not(.alert) { background-position: center 60px!important /* Moves hero image on print 03 pg mobile */ }
 .print-04-hero div:not(.alert) { background-position: center 83px!important /* Moves hero image on print 04 pg mobile */ }
 .print-05-hero div:not(.alert) { background-position: center 169px!important; /* Moves hero image on branding/print 05 pg mobile */ }
-.print-06-hero div:not(.alert) { background-position: center 83px!important; /* Moves hero image on print 06 pg mobile */ }
-.print-08-hero div:not(.alert) { background-position: center 83px!important; /* Moves hero image on print 08 pg mobile */ }
+.print-06-hero div:not(.alert) { background-position: center 169px!important; /* Moves hero image on print 06 pg mobile */ }
 	
 .packaging-01-hero div:not(.alert) { background-position: center 11px!important; /* Moves hero image on print 01 pg mobile */ }
 .packaging-02-hero div:not(.alert) { background-position: center 11px!important; /* Moves hero image on print 02 pg mobile */ }
 .packaging-03-hero div:not(.alert) { background-position: center!important; /* Moves hero image on print 03 pg mobile */ }
-.packaging-04-hero div:not(.alert) { background-position: bottom!important; /* Moves hero image on print 04 pg mobile */ }
 	
 .ads-01-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 01 pg mobile */ }
 .ads-02-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 02 pg mobile */ }
 .ads-03-hero div:not(.alert) { background-position: center 10px!important; /* Moves hero image on print 03 pg mobile */ }
 .ads-04-hero div:not(.alert) { background-position: center 15px!important; /* Moves hero image on print 04 pg mobile */ }
 .ads-05-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 05 pg mobile */ }
-.ads-06-hero div:not(.alert) { background-position: 0px 0px!important; /* Moves hero image on print 06 pg mobile */ }
+.ads-06-hero div:not(.alert) { background-position: center 100px!important; /* Moves hero image on print 06 pg mobile */ }
 	
 .promo-01-hero div:not(.alert) { background-position: center 10px!important; /* Moves hero image on promo 01 pg mobile */ }
 .promo-02-hero div:not(.alert) { background-position: center 90px!important; /* Moves hero image on promo 02 pg mobile */ }
 .promo-03-hero div:not(.alert) { background-position: left 6px!important; /* Moves hero image on promo 03 pg mobile */ }
-.promo-04-hero div:not(.alert) { background-position-x: 50%!important; /* Moves hero image on promo 04 pg mobile */ }
 	
-.tradeshow-01-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on tradeshow 01 pg mobile */ }
-.tradeshow-02-hero div:not(.alert) { background-position: center 0px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
+.tradeshow-01-hero div:not(.alert) { background-position: left 100px!important; /* Moves hero image on tradeshow 01 pg mobile */ }
+.tradeshow-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 02 pg mobile */ }
 .tradeshow-03-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on tradeshow 03 pg mobile */ }
 .tradeshow-04-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on tradeshow 04 pg mobile */ }
-.tradeshow-05-hero div:not(.alert) { background-position: bottom !important; /* Moves hero image on tradeshow 04 pg mobile */ }
-.tradeshow-06-hero div:not(.alert) { background-position: top !important; /* Moves hero image on tradeshow 06 mobile */ }
+.tradeshow-05-hero div:not(.alert) { background-position: right!important; /* Moves hero image on tradeshow 04 pg mobile */ }
 	
 .photo-01-hero div:not(.alert) { background-position: right 128px!important; /* Moves hero image on photo 01 pg mobile */ }
 .photo-02-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on photo 02 pg mobile */ }
 .photo-03-hero div:not(.alert) { background-position: left 33px!important; /* Moves hero image on photo 03 pg mobile */ }
 .photo-04-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on photo 04 pg mobile */ }
 .photo-05-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on photo 05 pg mobile */ }
+	
+#header[data-transparent="true"] + #page-title { padding: 234px 0 123px 0; background-size: cover;  /* Adjusts hero image height for mobile - move down */ }
 	
 .page-menu a:not(.btn) { font-size: 13px; color: #0276FD; font-weight: 500; font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
 .page-menu { text-align: center; list-style-type: none; }
@@ -659,7 +596,7 @@ h2, .h2 { line-height: 1.1em; padding-bottom: 0px; }
 /* ----------------------------------------------------------------
 Mobile Landscape Updates 
 -----------------------------------------------------------------*/
-@media (orientation: landscape) and (max-width: 991.98px) {
+@media (orientation: landscape) {
 .bg-overlay-mobile {background: none;}
 .hero-01-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-01.webp)!important; /* Replaces hero image on home page banner slide 01 pg mobile landscape */ }
 div.slide-captions.text-left.hero-01 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
@@ -677,11 +614,6 @@ div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Cap
 div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
 .hero-08-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
 div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
-
-#page-title {height: 564px;}
-
-.promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
-.packaging-04-hero div:not(.alert) { background-position: -30px 83px!important; /* Moves hero image on packaging 04 pg mobile */ }
 
 /* ----------------------------------------------------------------
 Slider Button Changes
@@ -721,6 +653,7 @@ h3, .h3 { font-size: 1.35714286em; line-height: 1.286em!important; }
 h1#footer-h1.text-medium.fw-700 { font-size: 25px !important; }
 	
 }
+}
 
 /* ----------------------------------------------------------------
 Mobile / Tablet Portrait Updates 
@@ -731,6 +664,8 @@ Mobile / Tablet Portrait Updates
 .flickity-button { visibility: hidden; }
 h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
 	
-	
 }
 
+.down-bg {
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246, 252, 1));
+}
