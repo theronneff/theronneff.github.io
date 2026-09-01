@@ -622,7 +622,6 @@ h2, .h2 { line-height: 1.1em; padding-bottom: 0px; }
 	
 .bg-overlay-mobile { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; content: ' '; z-index: 0; background: -webkit-linear-gradient(top, #000 25%, #fff 90%); background: linear-gradient(180deg, #fff 25%, #000 90%); opacity: .9; mix-blend-mode: multiply; } /* Replaces hero image on home page banner slide 01 pg mobile */
 
-.hero-01-mobile { background-image: url(../images/pages/hero-01-mobile.jpg)!important; /* Replaces hero image on home page banner slide 02 pg mobile portrait */ }
 .hero-02-mobile { background-image: url(../images/pages/hero-02-mobile.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile portrait */ }
 .hero-03-mobile { background-image: url(../images/pages/hero-03-mobile.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile portrait */ }
 .hero-04-mobile { background-image: url(../images/pages/hero-04-mobile.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile portrait */ }
