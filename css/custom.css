@@ -384,6 +384,18 @@ form label { font-size: 1.28rem; }
 Parallax
 -------------------------------------------------------------------------*/
 #page-title[data-bg-parallax], [data-bg-parallax] { background-color: #fff; }
+#page-title {
+  /* fixed height that won't change when logo/header height changes */
+  height: 600px;
+  min-height: 420px; /* fallback on small viewports */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* inner spacing only */
+  box-sizing: border-box;
+  background: url('/path/to/hero.jpg') center/cover no-repeat;
+  position: relative;
+}
 
 /*  Portfolio */
 /* ----------------------------------------------------------------
@@ -448,6 +460,10 @@ button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) 
 /* ----------------------------------------------------------------
 End Contact Page PHP Form 
 -----------------------------------------------------------------*/
+
+.down-bg {
+background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246, 252, 1));
+}
 
 /* ----------------------------------------------------------------
 Mobile / Tablet Updates 
@@ -568,8 +584,6 @@ h1, .h1 { line-height: 1.11em; }
 .photo-04-hero div:not(.alert) { background-position: center 123px!important; /* Moves hero image on photo 04 pg mobile */ }
 .photo-05-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on photo 05 pg mobile */ }
 	
-#header[data-transparent="true"] + #page-title { padding: 234px 0 123px 0; background-size: cover;  /* Adjusts hero image height for mobile - move down */ }
-	
 .page-menu a:not(.btn) { font-size: 13px; color: #0276FD; font-weight: 500; font-family: "Open Sans", "Helvetica", "Arial", sans-serif; }
 .page-menu { text-align: center; list-style-type: none; }
 .grid-filter ul { text-align: center; }
@@ -657,9 +671,8 @@ div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Cap
 div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
 .hero-08-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
 div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
+	
 
-#header[data-transparent="true"] + #page-title {top: -120px;margin-bottom: -124px;padding: 300px 0 264px 0; max-height: 60vh;}
-.scsw {display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 8px;height: 100%;max-height: 140px;}
 .promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
 .packaging-04-hero div:not(.alert) { background-position: -30px 83px!important; /* Moves hero image on packaging 04 pg mobile */ }
 
@@ -701,7 +714,6 @@ h3, .h3 { font-size: 1.35714286em; line-height: 1.286em!important; }
 h1#footer-h1.text-medium.fw-700 { font-size: 25px !important; }
 	
 }
-}
 
 /* ----------------------------------------------------------------
 Mobile / Tablet Portrait Updates 
@@ -711,11 +723,6 @@ Mobile / Tablet Portrait Updates
 .inspiro-slider .slide .container, .inspiro-slider .slide .container-wide { position: absolute; bottom: 77px; max-width: 100%;  /*Moves hero text to bottom on mobile*/ }
 .flickity-button { visibility: hidden; }
 h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
-#header[data-transparent="true"] + #page-title {top: -120px;margin-bottom: -124px;padding: 300px 0 300px 0; max-height: 60vh;}
-.scsw {display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 8px;height: 100%;max-height: 180px;}
-}
 
-.down-bg {
-background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246, 252, 1));
 }
 
