@@ -679,9 +679,9 @@ div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Capti
 div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
 
 #page-title {height: 564px;}
-
 .promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
 .packaging-04-hero div:not(.alert) { background-position: -30px 83px!important; /* Moves hero image on packaging 04 pg mobile */ }
+}
 
 /* ----------------------------------------------------------------
 Slider Button Changes
@@ -731,6 +731,4 @@ Mobile / Tablet Portrait Updates
 .flickity-button { visibility: hidden; }
 h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
 	
-	
 }
-
