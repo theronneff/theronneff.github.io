@@ -469,6 +469,9 @@ End Contact Page PHP Form
 background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246, 252, 1));
 }
 
+.slide { position:relative; min-height:400px; background-repeat:no-repeat; background-size:cover; background-position:center; }
+.slide-fallback-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+
 /* ----------------------------------------------------------------
 Mobile / Tablet Updates 
 -----------------------------------------------------------------*/
