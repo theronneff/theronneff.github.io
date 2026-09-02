@@ -226,7 +226,7 @@ Scroll top
 /* ----------------------------------------------------------------
 Blockquotes
 -----------------------------------------------------------------*/
-.blockquote { border-left: 4px solid #002555; font-size: 18px; padding: 2px 0 0 30px; margin: 0 0 30px; }
+.blockquote { border-left: 4px solid #002555; font-size: 18px; padding: 11px 0 13px 30px; margin: 0 0 30px; }
 
 /* ----------------------------------------------------------------------
 Counters
