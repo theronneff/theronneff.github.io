@@ -180,9 +180,9 @@ button.btn.btn-dark.btn-fill:hover, button.btn.btn-dark.btn-fill:focus, button.b
 
 button.btn.btn-sm, .btn:not(.close):not(.mfp-close).btn-sm, a.btn:not([href]):not([tabindex]).btn-sm { font-size: 12px; height: 33px; line-height: 28px; padding: 0 14px; text-transform: capitalize; letter-spacing: normal; }
 
-button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { letter-spacing: 0px; text-transform: inherit; padding: 12px 39px; }
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { letter-spacing: 0px; text-transform: inherit; padding: 22px 44px; }
 
-button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { padding: 16px 39px; }
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { padding: 22px 44px; }
 
 /* Regular Button changes */
 button.btn.btn-dark, .btn:not(.close):not(.mfp-close).btn-dark, a.btn:not([href]):not([tabindex]).btn-dark { background-color: #000000; border-color: #000000; border-width: 1px; }
