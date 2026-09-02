@@ -46,6 +46,33 @@ side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent
 #side-panel-menu { padding: 25px; }
 side-panel-menu.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { font-size: 15px!important; font-weight: 600; text-transform: capitalize; padding: 12px 18px; }
 
+/* Side panel full-viewport overlay to prevent clipping when menu is active */
+.side-panel.side-panel-active.side-panel-push::after {
+  content: "";
+  position: fixed;
+  inset: 0;                    /* top:0; right:0; bottom:0; left:0 */
+  background: rgba(0,0,0,0.55);/* dark overlay color - adjust alpha as needed */
+  z-index: 999999;             /* under #side-panel (1000000) but above page content */
+  pointer-events: none;        /* doesn't block clicks; set to auto if you want clicks to close the menu */
+}
+
+/* Optional: remove the existing brightness/blur filter to avoid double-darkening */
+.side-panel.side-panel-active.side-panel-push .body-inner,
+.side-panel.side-panel-active.side-panel-push #wrapper {
+  filter: none !important;
+}
+
+/* Alternative fallback: use a body-level overlay if the side-panel is inside a transformed ancestor.
+   This requires your menu JS to add/remove the 'menu-open' class on <body>. */
+body.menu-open::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 999999;
+  pointer-events: none;
+}
+
 button.btn.btn-transparent-menu, .btn:not(.close):not(.mfp-close).btn-transparent-menu, a.btn:not([href]):not([tabindex]).btn-transparent-menu { background-color: transparent; border: 0; color: #fff; }
 button.btn.btn-transparent-menu.btn-inverted, .btn:not(.close):not(.mfp-close).btn-transparent-menu.btn-inverted, a.btn:not([href]):not([tabindex]).btn-transparent-menu.btn-inverted { color: #fff; }
 
