@@ -867,5 +867,6 @@ Mobile / Tablet Portrait Updates
 .inspiro-slider .slide .container, .inspiro-slider .slide .container-wide { position: absolute; bottom: 77px; max-width: 100%;  /*Moves hero text to bottom on mobile*/ }
 .flickity-button { visibility: hidden; }
 h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
+.hero-06-mobile-h { color: #fff!important; 
 	
 }
