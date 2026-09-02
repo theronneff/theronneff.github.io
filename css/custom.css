@@ -27,7 +27,7 @@ h7, .h7 { font-size: 1em; line-height: 1.85714286em; font-weight: 700; }
 Side Push Panel / Main Menu
 -----------------------------------------------------------------*/
 /* Side panel position keeps body from moving */
-.side-panel .body-inner, .side-panel #wrapper { height: 100vh; position: static; }
+.side-panel .body-inner, .side-panel #wrapper { position: static; }
 
 /* Side panel is brought above body and menu logo */
 #side-panel { z-index: 1000000; }
@@ -203,9 +203,6 @@ button.btn.btn-white:hover, button.btn.btn-white:focus, button.btn.btn-white:act
 /* ----------------------------------------------------------------------
 Headings
 -------------------------------------------------------------------------*/
-/* Paragraph font size, line height and color changes */
-.heading-text.heading-section p { font-size: 1.125rem; font-weight: 400; }
-.heading-text.heading-section p span { font-size: 1.125rem; font-weight: 400; }
 
 .heading-text.heading-section h2 { position: relative; font-size: 2.35714286em; line-height: 56px; margin-bottom: 60px; }
 .heading-text.heading-section > h2:before { background-color: transparent; /* Outline under title changed to transparent */ }
@@ -437,10 +434,149 @@ Portfolio
 }
 
 .dark #header .header-inner, .dark #header #header-wrap, #header.dark .header-inner, #header.dark #header-wrap {
-    background-color: transparent;
+    background-color: rgba(30, 32, 34, 0.93);
 }
 
 .grid-4-columns .grid-item.large-width-new, .post-4-columns .post-item.large-width-new, .portfolio-4-columns .portfolio-item.large-width-new { width: 100%; }
+
+/* ----------------------------------------------------------------
+Sections Vertical Scroll-Snap 
+-----------------------------------------------------------------*/
+main {
+	height: 100vh;
+	overflow-y: auto;
+	scroll-snap-type: y mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+
+.section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-align: start;
+	position: relative;
+}
+
+.section-1 {
+	background-color: #CCD5AE;
+	background-image: url('../images/pages/hero-01.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-1 {
+    background-image: url('../images/pages/hero-01-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-2 {
+	background-color: #E9EDC9;
+	background-image: url('../images/pages/hero-02.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-2 {
+    background-image: url('../images/pages/hero-02-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-3 {
+	background-color: #FEFAE0;
+	background-image: url('../images/pages/hero-03.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-3 {
+    background-image: url('../images/pages/hero-03-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-4 {
+	background-color: #FAEDCD;
+	background-image: url('../images/pages/hero-04.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-4 {
+    background-image: url('../images/pages/hero-04-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-5 {
+	background-color: #D4A373;
+	background-image: url('../images/pages/hero-05.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-5 {
+    background-image: url('../images/pages/hero-05-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-6 {
+	background-color: #D4A373;
+	background-image: url('../images/pages/hero-06.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-6 {
+    background-image: url('../images/pages/hero-06-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-7 {
+	background-color: #D4A373;
+	background-image: url('../images/pages/hero-07.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-7 {
+    background-image: url('../images/pages/hero-07-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.section-8 {
+	background-color: #D4A373;
+	background-image: url('../images/pages/hero-08.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Mobile Portrait Override */
+@media (max-width: 768px) {
+  .section-8 {
+    background-image: url('../images/pages/hero-08-mobile.jpg'); /* Path to your portrait image */
+  }
+}
+
+.wrapper {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 
 /* ----------------------------------------------------------------
 Contact Page PHP Form 
@@ -470,7 +606,6 @@ background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(241, 246,
 }
 
 .slide { position:relative; min-height:400px; background-repeat:no-repeat; background-size:cover; background-position:center; }
-.slide-fallback-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
 
 /* ----------------------------------------------------------------
 Mobile / Tablet Updates 
@@ -629,6 +764,15 @@ h2, .h2 { line-height: 1.1em; padding-bottom: 0px; }
 .hero-06-mobile { background-image: url(../images/pages/hero-06-mobile.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile */ }
 .hero-07-mobile { background-image: url(../images/pages/hero-07-mobile.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile */ }
 .hero-08-mobile { background-image: url(../images/pages/hero-08-mobile.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile */ }
+	
+.hero-01 { text-align: center!important; }
+.hero-02 { text-align: center!important; }
+.hero-03 { text-align: center!important; }
+.hero-04 { text-align: center!important; }
+.hero-05 { text-align: center!important; }
+.hero-06 { text-align: center!important; }
+.hero-07 { text-align: center!important; }
+.hero-08 { text-align: center!important; }
 
 .inspiro-slider .container { padding-left: 0px!important; padding-right: 0px!important; }
 	
@@ -637,7 +781,6 @@ h2, .h2 { line-height: 1.1em; padding-bottom: 0px; }
 .inspiro-slider .flickity-page-dots { bottom: 135px; /* Set slider page dots higher */ }
 	
 #skills-main.row { text-align: center; }
-#skills-main.row p { font-size: 1.125rem; margin-bottom: 1.6rem; }
 	
 #about { text-align: center; }
 #about p { margin-bottom: 1.6rem; }
@@ -663,21 +806,14 @@ Mobile Landscape Updates
 -----------------------------------------------------------------*/
 @media (orientation: landscape) and (max-width: 991.98px) {
 .bg-overlay-mobile {background: none;}
-div.slide-captions.text-left.hero-01 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
-.hero-02-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-02.webp)!important; /* Replaces hero image on home page banner slide 02 pg mobile landscape */ }
-div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
-.hero-03-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-03.webp)!important; /* Replaces hero image on home page banner slide 03 pg mobile landscape */ }
-div.slide-captions.text-left.hero-03 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
-.hero-04-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-04.webp)!important; /* Replaces hero image on home page banner slide 04 pg mobile landscape */ }
-div.slide-captions.text-end.hero-04 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
-.hero-05-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-05.webp)!important; /* Replaces hero image on home page banner slide 05 pg mobile landscape */ }
+div.slide-captions.text-left.hero-01 { text-align: left!important; margin-left:-111px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
+div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; margin-right: -103px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
+div.slide-captions.text-left.hero-03 { text-align: left!important; margin-left:-111px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
+div.slide-captions.text-end.hero-04 { text-align: end!important; margin-right: -103px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
 div.slide-captions.text-center.text-light.hero-05 { text-align: center!important; /* Aligns Captions to the right on home page banner slide 05 pg mobile landscape */ }
-.hero-06-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-06.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile landscape */ }
-div.slide-captions.text-left.hero-06 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
-.hero-07-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-07.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile landscape */ }
-div.slide-captions.text-end.hero-07 { text-align: end!important; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
-.hero-08-mobile { background-image: url(https://theronneff.github.io/images/pages/hero-08.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile landscape */ }
-div.slide-captions.text-left.hero-08 { text-align: left!important; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
+div.slide-captions.text-left.hero-06 { text-align: left!important; margin-left:-111px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
+div.slide-captions.text-end.hero-07 { text-align: end!important; margin-right: -103px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
+div.slide-captions.text-left.hero-08 { text-align: left!important; margin-left:-111px; margin-top: 50px; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
 
 #page-title {height: 564px;}
 .promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
