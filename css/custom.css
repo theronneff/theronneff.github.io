@@ -239,7 +239,7 @@ Headings
 /* ----------------------------------------------------------------
 Typography : Font size
 -----------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7 { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: 0px; }
+h1, h2, h3, h4, h5, h6, h7, .h1, .h2, .h3, .h4, .h5, .h6, .h7 { font-family: inherit; color: #1e2022; margin: 0; letter-spacing: -0.02em; }
 
 /* ----------------------------------------------------------------
 Scroll top
@@ -791,15 +791,6 @@ h2, .h2 { line-height: 1.1em; padding-bottom: 0px; }
 .hero-06-mobile { background-image: url(../images/pages/hero-06-mobile.webp)!important; /* Replaces hero image on home page banner slide 06 pg mobile */ }
 .hero-07-mobile { background-image: url(../images/pages/hero-07-mobile.webp)!important; /* Replaces hero image on home page banner slide 07 pg mobile */ }
 .hero-08-mobile { background-image: url(../images/pages/hero-08-mobile.webp)!important; /* Replaces hero image on home page banner slide 08 pg mobile */ }
-	
-.hero-01 { text-align: center!important; }
-.hero-02 { text-align: center!important; }
-.hero-03 { text-align: center!important; }
-.hero-04 { text-align: center!important; }
-.hero-05 { text-align: center!important; }
-.hero-06 { text-align: center!important; }
-.hero-07 { text-align: center!important; }
-.hero-08 { text-align: center!important; }
 
 .inspiro-slider .container { padding-left: 0px!important; padding-right: 0px!important; }
 	
@@ -894,6 +885,29 @@ Mobile / Tablet Portrait Updates
 .inspiro-slider .slide .container, .inspiro-slider .slide .container-wide { position: absolute; bottom: 77px; max-width: 100%;  /*Moves hero text to bottom on mobile*/ }
 .flickity-button { visibility: hidden; }
 h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-06-mobile-h.fw-500.animate__fadeInUp { color: #fff!important; /*Changes hero-06-mobile title color to white on mobile portrait*/ }
-.hero-06-mobile-h { color: #fff!important; 
 	
+}
+
+/* Target tablets in portrait mode explicitly */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+section.section.section-1 { background-position: -333px bottom; /* Moves hero image photo 01 section tablet */ }
+section.section.section-2 { background-position: -600px bottom; /* Moves hero image photo 02 section tablet */ }
+section.section.section-3 { background-position: -375px bottom; /* Moves hero image photo 03 section tablet */ }
+section.section.section-4 { background-position: -555px bottom; /* Moves hero image photo 04 section tablet */ }
+section.section.section-6 { background-position: -425px bottom; /* Moves hero image photo 06 section tablet */ }
+}
+
+/* ----------------------------------------------------------------
+Mobile Portrait Updates 
+-----------------------------------------------------------------*/
+@media (max-width: 767px) and (orientation: portrait) {
+.hero-06-mobile-h { color: #fff!important; }
+.hero-01 { text-align: center!important; }
+.hero-02 { text-align: center!important; }
+.hero-03 { text-align: center!important; }
+.hero-04 { text-align: center!important; }
+.hero-05 { text-align: center!important; }
+.hero-06 { text-align: center!important; }
+.hero-07 { text-align: center!important; }
+.hero-08 { text-align: center!important; }
 }
