@@ -605,10 +605,6 @@ main {
 	padding-right: 1rem;
 }
 
-.ts {
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-}
-
 /* ----------------------------------------------------------------
 Contact Page PHP Form 
 -----------------------------------------------------------------*/
@@ -906,7 +902,7 @@ Mobile Portrait Updates
 -----------------------------------------------------------------*/
 @media (max-width: 767px) and (orientation: portrait) {
 .hero-06-mobile-h { color: #fff!important; }
-.hero-01 { text-align: center!important; }
+.hero-01 { text-align: center!important;}
 .hero-02 { text-align: center!important; }
 .hero-03 { text-align: center!important; }
 .hero-04 { text-align: center!important; }
@@ -914,4 +910,5 @@ Mobile Portrait Updates
 .hero-06 { text-align: center!important; }
 .hero-07 { text-align: center!important; }
 .hero-08 { text-align: center!important; }
+.ts, .h3, .h2 { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6)!important;}
 }
