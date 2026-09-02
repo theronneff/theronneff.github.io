@@ -18,7 +18,7 @@
 	Typography : Reset
 -----------------------------------------------------------------*/
 p { font-style: normal; font-weight: 400; text-transform: none; letter-spacing: 0; color: #3c4043; }
-body { font-size: 1.28rem!important; line-height: 1.65714286em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #3c4043; }
+body { font-size: 1.28rem!important; line-height: 1.65714286em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #3c4043; background-color: #3c4043;}
 h5, .h5 { font-size: 1.4em; }
 h6, .h6 { font-size: 1.1em; line-height: 1.85714286em; font-weight: 500; }
 h7, .h7 { font-size: 1em; line-height: 1.85714286em; font-weight: 700; }
