@@ -487,6 +487,7 @@ main {
 
 .section-1 {
 	background-image: url('../images/pages/hero-01.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -500,6 +501,7 @@ main {
 
 .section-2 {
 	background-image: url('../images/pages/hero-02.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -513,6 +515,7 @@ main {
 
 .section-3 {
 	background-image: url('../images/pages/hero-03.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -526,6 +529,7 @@ main {
 
 .section-4 {
 	background-image: url('../images/pages/hero-04.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -539,6 +543,7 @@ main {
 
 .section-5 {
 	background-image: url('../images/pages/hero-05.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -552,6 +557,7 @@ main {
 
 .section-6 {
 	background-image: url('../images/pages/hero-06.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -565,6 +571,7 @@ main {
 
 .section-7 {
 	background-image: url('../images/pages/hero-07.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -578,6 +585,7 @@ main {
 
 .section-8 {
 	background-image: url('../images/pages/hero-08.jpg');
+	background-color: #000000;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
