@@ -832,14 +832,14 @@ Mobile Landscape Updates
 -----------------------------------------------------------------*/
 @media (orientation: landscape) and (max-width: 991.98px) {
 .bg-overlay-mobile {background: none;}
-div.slide-captions.text-left.hero-01 { text-align: left!important; margin-left: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
-div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; margin-right: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
-div.slide-captions.text-left.hero-03 { text-align: left!important; margin-left: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
-div.slide-captions.text-end.hero-04 { text-align: end!important; margin-right: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
+div.slide-captions.text-left.hero-01 { text-align: left!important; margin-left: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 01 pg mobile landscape */ }
+div.slide-captions.text-end.text-light.hero-02 { text-align: end!important; margin-right: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 02 pg mobile landscape */ }
+div.slide-captions.text-left.hero-03 { text-align: left!important; margin-left: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 03 pg mobile landscape */ }
+div.slide-captions.text-end.hero-04 { text-align: end!important; margin-right: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 04 pg mobile landscape */ }
 div.slide-captions.text-center.text-light.hero-05 { text-align: center!important; /* Aligns Captions to the right on home page banner slide 05 pg mobile landscape */ }
-div.slide-captions.text-left.hero-06 { text-align: left!important; margin-left: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
-div.slide-captions.text-end.hero-07 { text-align: end!important; margin-right: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
-div.slide-captions.text-left.hero-08 { text-align: left!important; margin-left: calc(10px - 10vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
+div.slide-captions.text-left.hero-06 { text-align: left!important; margin-left: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 06 pg mobile landscape */ }
+div.slide-captions.text-end.hero-07 { text-align: end!important; margin-right: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 07 pg mobile landscape */ }
+div.slide-captions.text-left.hero-08 { text-align: left!important; margin-left: calc(10px - 11vw); margin-top: 50px; /* Aligns Captions to the right on home page banner slide 08 pg mobile landscape */ }
 
 #page-title {height: 564px;}
 .promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
