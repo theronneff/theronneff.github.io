@@ -685,7 +685,7 @@ button.btn:not(.btn-creative):not(.btn-slide).btn-sm, .btn:not(.close):not(.mfp-
 	
 button.btn:not(.btn-creative):not(.btn-slide).btn-lg, .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide).btn-lg, a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide).btn-lg { margin-left: 0px; }
 	
-button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) { height: 44px !important; padding: 13px 30px; letter-spacing: 0px!important; }
+button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) { height: 45px !important; padding: 14px 30px; letter-spacing: 0px!important; }
 	
 h1, .h1 { line-height: 1.11em; }
 	
