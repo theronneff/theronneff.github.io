@@ -207,9 +207,9 @@ button.btn.btn-dark.btn-fill:hover, button.btn.btn-dark.btn-fill:focus, button.b
 
 button.btn.btn-sm, .btn:not(.close):not(.mfp-close).btn-sm, a.btn:not([href]):not([tabindex]).btn-sm { font-size: 12px; height: 33px; line-height: 28px; padding: 0 14px; text-transform: capitalize; letter-spacing: normal; }
 
-button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { letter-spacing: 0px; text-transform: inherit; padding: 22px 44px; }
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { letter-spacing: 0px; text-transform: inherit; padding: 18px 44px; }
 
-button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { padding: 22px 44px; }
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) { padding: 18px 44px; }
 
 /* Regular Button changes */
 button.btn.btn-dark, .btn:not(.close):not(.mfp-close).btn-dark, a.btn:not([href]):not([tabindex]).btn-dark { background-color: #000000; border-color: #000000; border-width: 1px; }
@@ -612,8 +612,24 @@ Contact Page PHP Form
 .form-control-lg {
     padding: .5rem 0rem;
 }
+/* Fix button text clipping/overlap */
 button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) {
-    line-height: 0px;
+  /* restore a normal line-height so text doesn't collapse */
+  line-height: 1.2 !important;
+
+  /* keep the label on one line so it doesn't wrap inside a small column */
+  white-space: nowrap !important;
+
+  /* make button sizing predictable */
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Optional: a friendly min-width and padding for this specific Get in Touch button */
+.portfolio-attributes + .row .col-lg-2 .btn,
+.col-lg-2 > .p-t-15 > .btn {
+  min-width: 100px;
+  padding: 18px 44px;
 }
 @media (max-width: 991.98px) {
     button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) {
@@ -869,6 +885,11 @@ h3, .h3 { font-size: 1.35714286em; line-height: 1.85714286em!important; }
 .scroller section { height: 100vh; /* Adjusts hero sections on scroll stop snap on home pg mobile landscape */}
 
 .bottom-center { top: 95%;/* Adjusts footer padding on home pg mobile landscape */}
+	
+.scsw img, svg { width: 125px; }
+ #header[data-transparent="true"] + #page-title {
+        padding: 150px 0 0px 0;
+    }
 	
 h3, .h3 { font-size: 1.35714286em; line-height: 1.286em!important; }
 
