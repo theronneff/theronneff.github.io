@@ -844,6 +844,8 @@ div.slide-captions.text-left.hero-08 { text-align: left!important; margin-left: 
 #page-title {height: 564px;}
 .promo-04-hero div:not(.alert) { background-position: -30px 111px!important; /* Moves hero image on promo 04 pg mobile */ }
 .packaging-04-hero div:not(.alert) { background-position: -30px 83px!important; /* Moves hero image on packaging 04 pg mobile */ }
+	
+.col-lg-4 { width: 50%; }
 }
 
 /* ----------------------------------------------------------------
@@ -906,11 +908,13 @@ h3.text-dark.hero-06-mobile-h.fw-300.m-b-0.animate__fadeInUp, h2.text-dark.hero-
 section.section.section-1 { background-position: -333px bottom; background-image: url('../images/pages/hero-01.jpg'); /* Moves hero image photo 01 section tablet */ }
 section.section.section-2 { background-position: -525px bottom; background-image: url('../images/pages/hero-02.jpg'); /* Moves hero image photo 02 section tablet */ }
 section.section.section-3 { background-position: -333px bottom; background-image: url('../images/pages/hero-03.jpg'); /* Moves hero image photo 03 section tablet */ }
-section.section.section-4 { background-position: -525px bottom; background-image: url('../images/pages/hero-04.jpg'); /* Moves hero image photo 04 section tablet */ }
+section.section.section-4 { background-position: -400px bottom; background-image: url('../images/pages/hero-04.jpg'); /* Moves hero image photo 04 section tablet */ }
 section.section.section-5 { background-position: 0px bottom; background-image: url('../images/pages/hero-05.jpg'); /* Moves hero image photo 05 section tablet */ }
 section.section.section-6 { background-position: -525px bottom; background-image: url('../images/pages/hero-06.jpg'); /* Moves hero image photo 06 section tablet */ }
 section.section.section-7 { background-position: -333px bottom; background-image: url('../images/pages/hero-07.jpg'); /* Moves hero image photo 07 section tablet */ }
 section.section.section-8 { background-position: -525px bottom; background-image: url('../images/pages/hero-08.jpg'); /* Moves hero image photo 08 section tablet */ }
+	
+.col-lg-4 { width: 50%; }
 }
 
 /* ----------------------------------------------------------------
