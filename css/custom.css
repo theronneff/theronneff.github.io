@@ -320,6 +320,7 @@ form label { font-size: 1.28rem; }
 .logo-02-hero div:not(.alert) { background-position-y: 50%!important; /* Moves hero image on branding 02 pg */ }
 .logo-03-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on branding 03 pg */ }
 .logo-05-hero div:not(.alert) { background-position-y: 33%!important; /* Moves hero image on branding 04 pg */ }
+.logo-07-hero div:not(.alert) { background-position-y: 33%!important; /* Moves hero image on branding 04 pg */ }
 
 .digital-email-01-hero div:not(.alert) { background-position-y: 30%!important; /* Moves hero image on digital email 01 pg */ }
 .digital-email-02-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on digital email 02 pg */ }
@@ -726,6 +727,7 @@ h1, .h1 { line-height: 1.11em; }
 .logo-02-hero div:not(.alert) { background-position: left 0px!important; /* Moves hero image on branding 02 pg mobile */ }
 .logo-03-hero div:not(.alert) { background-position: right 83px!important; /* Moves hero image on branding 03 pg mobile */ }
 .logo-05-hero div:not(.alert) { background-position: -175px 133px!important; /* Moves hero image on branding 04 pg mobile */ }
+.logo-07-hero div:not(.alert) { background-position: center 50px!important; /* Moves hero image on branding 04 pg mobile */ }
 	
 .digital-store-01-hero div:not(.alert) { background-position: -111px 90px!important; /* Moves hero image on digital store 01 pg mobile */ }
 .digital-email-01-hero div:not(.alert) { background-position: center 60px!important; /* Moves hero image on digital email 01 pg mobile */ }
