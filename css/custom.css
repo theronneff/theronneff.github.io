@@ -467,6 +467,67 @@ Portfolio
 
 .grid-4-columns .grid-item.large-width-new, .post-4-columns .post-item.large-width-new, .portfolio-4-columns .portfolio-item.large-width-new { width: 100%; }
 
+.parallax-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  /* Optional for fixed parallax behavior */
+  /* position: fixed; */ 
+}
+
+/* Ensures the video behaves like a responsive thumbnail image */
+.portfolio-thumbnail-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps proportions clean inside square containers */
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Optional hover effect */
+a:hover .portfolio-thumbnail-video {
+    transform: scale(1.03);
+}
+
+/* Container positioning */
+.video-thumbnail-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+/* Update overlay to center SVG cleanly */
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 44%; /* Adjusted from 44% to true center */
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.33);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.play-icon-svg {
+    margin-left: -2px; /* Small optical adjustment for play triangles */
+}
+
+/* Hover Effect: Scale up button and brighten background */
+.video-thumbnail-container:hover .play-button-overlay {
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
 /* ----------------------------------------------------------------
 Sections Vertical Scroll-Snap 
 -----------------------------------------------------------------*/
@@ -604,6 +665,10 @@ main {
 	margin-right: auto;
 	padding-left: 1rem;
 	padding-right: 1rem;
+}
+
+button.btn.btn-slide > span, .btn:not(.close):not(.mfp-close).btn-slide > span, a.btn:not([href]):not([tabindex]).btn-slide > span {
+    top: 15px;
 }
 
 /* ----------------------------------------------------------------
