@@ -1,232 +1,305 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-
-<url>
-  <loc>https://theronneff.github.io/</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/work.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/demo.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/about.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/contact.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/digital-landing-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/digital-email-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/digital-store-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/digital-landing-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/digital-social-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-ads-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-project-05.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/packaging-project-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/tradeshow-project-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/promo-project-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/pdf/Theron-Neff-Resume.pdf</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-ads-06.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-project-04.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-project-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/logo-project-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/photo-project-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/photo-project-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/tradeshow-project-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-project-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/photo-project-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-ads-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/packaging-project-02.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/promo-project-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/logo-project-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/photo-project-04.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/promo-project-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/photo-project-05.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/packaging-project-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-ads-05.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-project-06.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/tradeshow-project-05.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-ads-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/logo-project-04.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/tradeshow-project-04.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-ads-04.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/print-project-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/logo-project-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/digital-email-01.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://theronneff.github.io/tradeshow-project-03.html</loc>
-  <lastmod>2026-06-01T19:00:29+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+  <url>
+       <loc>https://theronneff.github.io/</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/work.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/demo.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/about.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/contact.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-landing-01.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-email-02.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-store-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-landing-02.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-social-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-ads-03.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-05.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/packaging-project-01.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/tradeshow-project-01.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/promo-project-02.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-social-03.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-10.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/logo-project-06.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/packaging-project-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-web-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-08.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/promo-project-04.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-social-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-07.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-09.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/pdf/Theron-Neff-Resume.pdf</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/logo-project-03.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-ads-06.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-03.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/logo-project-02.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-email-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-02.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/tradeshow-project-02.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/photo-project-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/photo-project-02.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/photo-project-03.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/tradeshow-project-06.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-ads-02.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/logo-project-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/packaging-project-02.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/promo-project-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/photo-project-05.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/photo-project-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/promo-project-03.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/packaging-project-03.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-ads-05.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-06.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/tradeshow-project-05.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-ads-01.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-ads-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/logo-project-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/tradeshow-project-04.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/print-project-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-social-05.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/tradeshow-project-03.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-web-02.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-web-03.html</loc>
+       <lastmod>2026-09-13T15:20:48+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/logo-project-07.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://theronneff.github.io/digital-video-01.html</loc>
+       <lastmod>2026-09-13T15:20:47+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
 </urlset>
