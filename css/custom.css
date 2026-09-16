@@ -512,122 +512,121 @@ main {
 }
 
 .section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	scroll-snap-align: start;
-	position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    position: relative;
+    z-index: 0; /* Added */
+    overflow: hidden; /* Added */
 }
 
-.section-1 {
-	background-image: url('../images/pages/hero-01.jpg');
-	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    will-change: transform;
+    /* The animation line has been removed from here */
+}
+
+.section.is-visible::before {
+    animation: kenBurnsZoom 10s infinite alternate ease-in-out;
+}
+
+@keyframes kenBurnsZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); } /* Adjust 1.15 for more or less zoom */
+}
+
+.section-1::before {
+    background-image: url('../images/pages/hero-01.jpg');
+    background-color: #000000;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-1 {
+  .section-1::before {
     background-image: url('../images/pages/hero-01-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-2 {
+.section-2::before {
 	background-image: url('../images/pages/hero-02.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-2 {
+  .section-2::before {
     background-image: url('../images/pages/hero-02-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-3 {
+.section-3::before {
 	background-image: url('../images/pages/hero-03.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-3 {
+  .section-3::before {
     background-image: url('../images/pages/hero-03-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-4 {
+.section-4::before {
 	background-image: url('../images/pages/hero-04.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-4 {
+  .section-4::before {
     background-image: url('../images/pages/hero-04-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-5 {
+.section-5::before {
 	background-image: url('../images/pages/hero-05.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-5 {
+  .section-5::before {
     background-image: url('../images/pages/hero-05-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-6 {
+.section-6::before {
 	background-image: url('../images/pages/hero-06.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-6 {
+  .section-6::before {
     background-image: url('../images/pages/hero-06-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-7 {
+.section-7::before {
 	background-image: url('../images/pages/hero-07.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-7 {
+  .section-7::before {
     background-image: url('../images/pages/hero-07-mobile.jpg'); /* Path to your portrait image */
   }
 }
 
-.section-8 {
+.section-8::before {
 	background-image: url('../images/pages/hero-08.jpg');
 	background-color: #000000;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
-  .section-8 {
+  .section-8::before {
     background-image: url('../images/pages/hero-08-mobile.jpg'); /* Path to your portrait image */
   }
 }
@@ -644,40 +643,21 @@ button.btn.btn-slide > span, .btn:not(.close):not(.mfp-close).btn-slide > span, 
     top: 15px;
 }
 
-/* ----------------------------------------------------------------
-Contact Page PHP Form 
------------------------------------------------------------------*/
-
-.form-control-lg {
-    padding: .5rem 0rem;
-}
-/* Fix button text clipping/overlap */
-button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]) {
-  /* restore a normal line-height so text doesn't collapse */
-  line-height: 1.2 !important;
-
-  /* keep the label on one line so it doesn't wrap inside a small column */
-  white-space: nowrap !important;
-
-  /* make button sizing predictable */
-  display: inline-block;
-  box-sizing: border-box;
+/* Base state: Hidden and offset down */
+.section [data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: opacity, transform;
 }
 
-/* Optional: a friendly min-width and padding for this specific Get in Touch button */
-.portfolio-attributes + .row .col-lg-2 .btn,
-.col-lg-2 > .p-t-15 > .btn {
-  min-width: 100px;
-  padding: 18px 44px;
+/* Active state: Triggered when parent section gets '.is-active' */
+.section.is-active [data-animate] {
+  opacity: 1;
+  transform: translateY(0);
 }
-@media (max-width: 991.98px) {
-    button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) {
-        height: 40px!important;
-    }
-	#header[data-transparent="true"] + #page-title {
-        padding: 200px 0 0px 0;
-    }
-}
+
 
 /* ----------------------------------------------------------------
 End Contact Page PHP Form 
@@ -724,7 +704,23 @@ button.btn:not(.btn-creative):not(.btn-slide).btn-sm, .btn:not(.close):not(.mfp-
 	
 button.btn:not(.btn-creative):not(.btn-slide).btn-lg, .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide).btn-lg, a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide).btn-lg { margin-left: 0px; }
 	
-button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) { height: 45px !important; padding: 14px 30px; letter-spacing: 0px!important; }
+button.btn:not(.btn-creative):not(.btn-slide), .btn:not(.close):not(.mfp-close):not(.btn-creative):not(.btn-slide), a.btn:not([href]):not([tabindex]):not(.btn-creative):not(.btn-slide) {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+max-width: 150px;
+min-height: 1.5em;
+height: auto;
+padding: 0.8em 1.5em;
+font-size: 1rem;
+text-align: center;
+box-sizing: border-box;
+}
+	
+a#side-panel-trigger.toggle-item.side-panel-menu.btn.btn-transparent-menu {
+margin-top: -6px !important;
+}
 	
 h1, .h1 { line-height: 1.11em; }
 	
