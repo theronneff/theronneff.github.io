@@ -739,22 +739,6 @@
         }, observerOptions);
 
         sections.forEach(section => observer.observe(section));
-
-        // 3. Reset Slide 1 explicitly when scrolling past it, and re-trigger when returning to top
-        if (scrollContainer) {
-            scrollContainer.addEventListener('scroll', () => {
-                const firstSection = sections[0];
-                if (!firstSection) return;
-
-                if (scrollContainer.scrollTop === 0) {
-                    // Enforce re-triggering text animation when back at top
-                    firstSection.classList.add('is-active', 'is-visible');
-                } else if (scrollContainer.scrollTop > window.innerHeight * 0.5) {
-                    // Ensure Slide 1 loses active status when scrolled away
-                    firstSection.classList.remove('is-active');
-                }
-            });
-        }
     });
     </script>
 	
