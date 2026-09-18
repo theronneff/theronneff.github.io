@@ -446,17 +446,18 @@ Portfolio
 
 #header[data-transparent="true"] + #page-title { top: -120px; margin-bottom: -124px; position: relative; padding: 300px 0 160px 0; }
 
+
 .copyright-content-404 { position: fixed; bottom: 0; width: 100%; }
 
 #footer .copyright-content-contact{
     min-height: 80px;
     padding: 30px 0;
-    background-color: #fcf5ee!important;
+    background-color: #fdf6ee!important;
     font-size: 13px;
 }
 
 .copyright-text-contact {
-    background-color: #fcf5ee!important;
+    background-color: #fdf6ee!important;
 }
 
 #contact element.style {
