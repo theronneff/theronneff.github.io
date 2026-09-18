@@ -309,13 +309,6 @@ form label { font-size: 1.28rem; }
 .ellipsis { text-overflow: ellipsis; /* enables ellipsis */ white-space: nowrap; /* keeps the text in a single line */ overflow: hidden; /* keeps the element from overflowing its parent */ }
 
 /*Parallax Stuff*/
-.my-work-hero div:not(.alert) { background-position-y: 17%!important; /* Moves hero image on my work pg */ }
-.about-hero div:not(.alert) { background-position-y: 10%!important; /* Moves hero image on about pg */ }
-.patent-hero div:not(.alert) { background-position-y: 0%!important; /* Moves hero image on about pg */ }
-.contact-hero div:not(.alert) { background-position-y: 11%!important; /* Moves hero image on contact pg */ }
-.demo-hero div:not(.alert) { background-position-y: 9%!important; /* Moves parallax section image on */ }
-
-.hero-01-parallax div:not(.alert) { background-position-y: 50%!important; /* Moves parallax header on hero 01 */ }
 
 .logo-02-hero div:not(.alert) { background-position-y: 50%!important; /* Moves hero image on branding 02 pg */ }
 .logo-03-hero div:not(.alert) { background-position-y: 39%!important; /* Moves hero image on branding 03 pg */ }
@@ -455,6 +448,17 @@ Portfolio
 
 .copyright-content-404 { position: fixed; bottom: 0; width: 100%; }
 
+#footer .copyright-content-contact{
+    min-height: 80px;
+    padding: 30px 0;
+    background-color: #fcf5ee!important;
+    font-size: 13px;
+}
+
+.copyright-text-contact {
+    background-color: #fcf5ee!important;
+}
+
 #contact element.style {
     min-height: 58vh;
     display: flex;
@@ -499,6 +503,12 @@ Portfolio
 /* Optional hover zoom effect on thumbnail */
 .video-thumbnail-container:hover .portfolio-thumbnail-img {
     transform: scale(1.03);
+}
+
+.contact {
+    position: relative;
+    overflow: hidden;
+    padding: 250px 50px 250px;
 }
 
 /* ----------------------------------------------------------------
@@ -734,7 +744,7 @@ h1, .h1 { line-height: 1.11em; }
 #cta-main { padding-top: 50px !important; padding-bottom: 0px !important; }
 	
 .my-work-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on my work pg mobile */}
-.about-hero div:not(.alert) { background-position: right 90px!important; /* Moves hero image on about pg mobile */}
+.about-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on about pg mobile */}
 .patent-hero div:not(.alert) { background-position-x: 44%!important; /* Moves bg image on about pg mobile */}
 .contact-hero div:not(.alert) { background-position: right 90px!important; /* Moves hero image on about pg mobile */}
 .hero-01-parallax div:not(.alert) { background-position-x: 49%!important; /* Moves parallax header on home pg mobile hero 01 */ }
