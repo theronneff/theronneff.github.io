@@ -40,7 +40,7 @@ Side Push Panel / Main Menu
 
 /* Side panel close button size */
 #side-panel #close-panel { padding: 25px; }
-side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.btn:not([href]):not([tabindex]).btn-transparent { font-size: 21px; font-weight: 300; padding: 12px 12px; }
+side-panel.btn.btn-transparent, .btn:not(.close):not(.mfp-close).btn-transparent, a.btn:not([href]):not([tabindex]).btn-transparent { font-size: 21px; font-weight: 300; padding: 15px 15px; }
 
 /* Side panel menu close button size and highlight color */
 #side-panel-menu { padding: 25px; }
@@ -724,6 +724,10 @@ text-align: center;
 box-sizing: border-box;
 }
 	
+.m-close {
+padding: 0.4em 0.3em!important;
+}
+	
 a#side-panel-trigger.toggle-item.side-panel-menu.btn.btn-transparent-menu {
 margin-top: -6px !important;
 }
@@ -744,7 +748,7 @@ h1, .h1 { line-height: 1.11em; }
 #cta { padding-top: 30px !important; padding-bottom: 40px !important; }
 #cta-main { padding-top: 50px !important; padding-bottom: 0px !important; }
 	
-.my-work-hero div:not(.alert) { background-position: left 123px!important; /* Moves hero image on my work pg mobile */}
+.my-work-hero div:not(.alert) { background-position: -44px 123px!important; /* Moves hero image on my work pg mobile */}
 .about-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on about pg mobile */}
 .patent-hero div:not(.alert) { background-position-x: 44%!important; /* Moves bg image on about pg mobile */}
 .contact-hero div:not(.alert) { background-position: right 90px!important; /* Moves hero image on about pg mobile */}
