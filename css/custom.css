@@ -523,15 +523,14 @@ main {
 }
 
 .section {
-    width: 100vw;
-  	height: 100vh; /* Uses small viewport height to account for mobile browser bars */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
     position: relative;
-    z-index: 0;
-    overflow: hidden;
+    z-index: 0; /* Added */
+    overflow: hidden; /* Added */
 }
 
 .section::before {
@@ -558,14 +557,6 @@ main {
 .section-1::before {
     background-image: url('../images/pages/hero-01.jpg');
     background-color: #000000;
-	position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Fills the container while keeping aspect ratio */
-  object-position: center; /* Adjust if key focal point needs shifting */
-  z-index: -1;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
@@ -577,13 +568,6 @@ main {
 .section-2::before {
 	background-image: url('../images/pages/hero-02.jpg');
 	background-color: #000000;
-	top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Fills the container while keeping aspect ratio */
-  object-position: center; /* Adjust if key focal point needs shifting */
-  z-index: -1;
 }
 /* Mobile Portrait Override */
 @media (max-width: 768px) {
