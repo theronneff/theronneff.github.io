@@ -13,18 +13,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700");
 
-html::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1a1a1a; /* Match your theme color */
-  z-index: -9999;
-  pointer-events: none;
-}
-
 /*  Typography */
 /* ----------------------------------------------------------------
 	Typography : Reset
@@ -529,7 +517,6 @@ Sections Vertical Scroll-Snap
 -----------------------------------------------------------------*/
 main {
 	height: 100vh;
-	height: 100dvh; /* Dynamic Viewport Height fix for iOS Safari */
 	overflow-y: auto;
 	scroll-snap-type: y mandatory;
 	-webkit-overflow-scrolling: touch;
@@ -537,21 +524,13 @@ main {
 
 .section {
     height: 100vh;
-    height: 100dvh; /* Dynamic Viewport Height fix for iOS Safari */
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
     position: relative;
-    z-index: 0;
-    overflow: hidden;
-}
-@media (max-width: 768px) {
-  .section {
-    padding-top: calc(70px + env(safe-area-inset-top));
-    padding-bottom: env(safe-area-inset-bottom);
-    box-sizing: border-box;
-  }
+    z-index: 0; /* Added */
+    overflow: hidden; /* Added */
 }
 
 .section::before {
