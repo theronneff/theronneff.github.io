@@ -517,6 +517,7 @@ Sections Vertical Scroll-Snap
 -----------------------------------------------------------------*/
 main {
 	height: 100vh;
+	height: 100dvh; /* Dynamic Viewport Height fix for iOS Safari */
 	overflow-y: auto;
 	scroll-snap-type: y mandatory;
 	-webkit-overflow-scrolling: touch;
@@ -524,13 +525,21 @@ main {
 
 .section {
     height: 100vh;
+    height: 100dvh; /* Dynamic Viewport Height fix for iOS Safari */
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
     position: relative;
-    z-index: 0; /* Added */
-    overflow: hidden; /* Added */
+    z-index: 0;
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+  .section {
+    padding-top: calc(70px + env(safe-area-inset-top));
+    padding-bottom: env(safe-area-inset-bottom);
+    box-sizing: border-box;
+  }
 }
 
 .section::before {
