@@ -748,7 +748,7 @@ h1, .h1 { line-height: 1.11em; }
 #cta { padding-top: 30px !important; padding-bottom: 40px !important; }
 #cta-main { padding-top: 50px !important; padding-bottom: 0px !important; }
 	
-.my-work-hero div:not(.alert) { background-position: -44px 123px!important; /* Moves hero image on my work pg mobile */}
+.my-work-hero div:not(.alert) { background-position: -105px 123px!important; /* Moves hero image on my work pg mobile */}
 .about-hero div:not(.alert) { background-position: center 111px!important; /* Moves hero image on about pg mobile */}
 .patent-hero div:not(.alert) { background-position-x: 44%!important; /* Moves bg image on about pg mobile */}
 .contact-hero div:not(.alert) { background-position: right 90px!important; /* Moves hero image on about pg mobile */}
