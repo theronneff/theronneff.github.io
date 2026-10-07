@@ -218,7 +218,7 @@ button.btn.btn-white.btn-outline, button.btn.btn-light.btn-outline, .btn:not(.cl
 
 button.btn.btn-white.btn-outline:hover, button.btn.btn-white.btn-outline:focus, button.btn.btn-white.btn-outline:active, button.btn.btn-white.btn-outline.active, button.btn.btn-light.btn-outline:hover, button.btn.btn-light.btn-outline:focus, button.btn.btn-light.btn-outline:active, button.btn.btn-light.btn-outline.active, .btn:not(.close):not(.mfp-close).btn-white.btn-outline:hover, .btn:not(.close):not(.mfp-close).btn-white.btn-outline:focus, .btn:not(.close):not(.mfp-close).btn-white.btn-outline:active, .btn:not(.close):not(.mfp-close).btn-white.btn-outline.active, .btn:not(.close):not(.mfp-close).btn-light.btn-outline:hover, .btn:not(.close):not(.mfp-close).btn-light.btn-outline:focus, .btn:not(.close):not(.mfp-close).btn-light.btn-outline:active, .btn:not(.close):not(.mfp-close).btn-light.btn-outline.active, a.btn:not([href]):not([tabindex]).btn-white.btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-white.btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-white.btn-outline:active, a.btn:not([href]):not([tabindex]).btn-white.btn-outline.active, a.btn:not([href]):not([tabindex]).btn-light.btn-outline:hover, a.btn:not([href]):not([tabindex]).btn-light.btn-outline:focus, a.btn:not([href]):not([tabindex]).btn-light.btn-outline:active, a.btn:not([href]):not([tabindex]).btn-light.btn-outline.active { background-color: rgba(255, 255, 255, 0.69); border-color: #fff; color: #000000; border-width: 1px; }
 
-button.btn.btn-white, button.btn.btn-light, .btn:not(.close):not(.mfp-close).btn-white, .btn:not(.close):not(.mfp-close).btn-light, a.btn:not([href]):not([tabindex]).btn-white, a.btn:not([href]):not([tabindex]).btn-light { background-color: #fff; border-color: #fff; color: #000; border-width: 1px; }
+button.btn.btn-white, button.btn.btn-light, .btn:not(.close):not(.mfp-close).btn-white, .btn:not(.close):not(.mfp-close).btn-light, a.btn:not([href]):not([tabindex]).btn-white, a.btn:not([href]):not([tabindex]).btn-light { background-color: #fff; border-color: #e4e6ef; color: #000; border-width: 1px; }
 
 button.btn.btn-white:hover, button.btn.btn-white:focus, button.btn.btn-white:active, button.btn.btn-white.active, button.btn.btn-light:hover, button.btn.btn-light:focus, button.btn.btn-light:active, button.btn.btn-light.active, .btn:not(.close):not(.mfp-close).btn-white:hover, .btn:not(.close):not(.mfp-close).btn-white:focus, .btn:not(.close):not(.mfp-close).btn-white:active, .btn:not(.close):not(.mfp-close).btn-white.active, .btn:not(.close):not(.mfp-close).btn-light:hover, .btn:not(.close):not(.mfp-close).btn-light:focus, .btn:not(.close):not(.mfp-close).btn-light:active, .btn:not(.close):not(.mfp-close).btn-light.active, a.btn:not([href]):not([tabindex]).btn-white:hover, a.btn:not([href]):not([tabindex]).btn-white:focus, a.btn:not([href]):not([tabindex]).btn-white:active, a.btn:not([href]):not([tabindex]).btn-white.active, a.btn:not([href]):not([tabindex]).btn-light:hover, a.btn:not([href]):not([tabindex]).btn-light:focus, a.btn:not([href]):not([tabindex]).btn-light:active, a.btn:not([href]):not([tabindex]).btn-light.active { border-color: #fff; background-color: rgba(0, 0, 0, 0.63); color: #fff; border-width: 1px; }
 
@@ -453,6 +453,9 @@ Portfolio
     background-color: #fdf6ee!important;
     font-size: 13px;
 }
+
+.post-navigation .post-all { top: 22px; }
+.post-navigation { padding: 20px 0; display: block; }
 
 .copyright-text-contact {
     background-color: #fdf6ee!important;
